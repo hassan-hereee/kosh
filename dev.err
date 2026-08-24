@@ -1,0 +1,3760 @@
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'D:\Projects\New folder\.next\cache\webpack\server-development\1.pack.gz_' -> 'D:\Projects\New folder\.next\cache\webpack\server-development\1.pack.gz'
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'D:\Projects\New folder\.next\cache\webpack\client-development\2.pack.gz_' -> 'D:\Projects\New folder\.next\cache\webpack\client-development\2.pack.gz'
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⨯ ./components/sections/Journey.tsx
+Error: 
+  [31mx[0m Unexpected token `section`. Expected jsx identifier
+    ,-[[36;1;4mD:\Projects\New folder\components\sections\Journey.tsx[0m:13:1]
+ [2m13[0m |   const lineRef = useRef<HTMLDivElement>(null);
+ [2m14[0m | 
+ [2m15[0m |   return (
+ [2m16[0m |     <section className="bg-white relative overflow-hidden">
+    : [31;1m     ^^^^^^^[0m
+ [2m17[0m |       {/* Atmospheric orbs inside pinned viewport - vertical drift during pin for tunnel effect */}
+ [2m18[0m |       <ParallaxLayer depth="atmosphere" speedOverride={0.1} scaleRangeOverride={[1, 1.08]} horizontalDriftOverride={-0.01} className="absolute inset-0 pointer-events-none lg:block hidden">
+ [2m19[0m |         <div
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+./app/page.tsx
+ ⨯ ./components/sections/Journey.tsx
+Error: 
+  [31mx[0m Unexpected token `section`. Expected jsx identifier
+    ,-[[36;1;4mD:\Projects\New folder\components\sections\Journey.tsx[0m:13:1]
+ [2m13[0m |   const lineRef = useRef<HTMLDivElement>(null);
+ [2m14[0m | 
+ [2m15[0m |   return (
+ [2m16[0m |     <section className="bg-white relative overflow-hidden">
+    : [31;1m     ^^^^^^^[0m
+ [2m17[0m |       {/* Atmospheric orbs inside pinned viewport - vertical drift during pin for tunnel effect */}
+ [2m18[0m |       <ParallaxLayer depth="atmosphere" speedOverride={0.1} scaleRangeOverride={[1, 1.08]} horizontalDriftOverride={-0.01} className="absolute inset-0 pointer-events-none lg:block hidden">
+ [2m19[0m |         <div
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+./app/page.tsx
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ./components/sections/CopilotChat.tsx
+Error: 
+  [31mx[0m Unexpected token `section`. Expected jsx identifier
+    ,-[[36;1;4mD:\Projects\New folder\components\sections\CopilotChat.tsx[0m:35:1]
+ [2m35[0m |   };
+ [2m36[0m | 
+ [2m37[0m |   return (
+ [2m38[0m |     <section id="faqs" className="bg-soft-sky pt-0 pb-16 lg:pt-0 lg:pb-20 relative overflow-hidden">
+    : [31;1m     ^^^^^^^[0m
+ [2m39[0m |       {/* Restrained atmospheric background — two soft layers for depth behind the chat */}
+ [2m40[0m |       <ParallaxLayer depth="atmosphere" className="absolute inset-0">
+ [2m41[0m |         <div
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+./app/page.tsx
+ ⨯ ./components/sections/CopilotChat.tsx
+Error: 
+  [31mx[0m Unexpected token `section`. Expected jsx identifier
+    ,-[[36;1;4mD:\Projects\New folder\components\sections\CopilotChat.tsx[0m:35:1]
+ [2m35[0m |   };
+ [2m36[0m | 
+ [2m37[0m |   return (
+ [2m38[0m |     <section id="faqs" className="bg-soft-sky pt-0 pb-16 lg:pt-0 lg:pb-20 relative overflow-hidden">
+    : [31;1m     ^^^^^^^[0m
+ [2m39[0m |       {/* Restrained atmospheric background — two soft layers for depth behind the chat */}
+ [2m40[0m |       <ParallaxLayer depth="atmosphere" className="absolute inset-0">
+ [2m41[0m |         <div
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+./app/page.tsx
+ ⨯ ./components/sections/CopilotChat.tsx
+Error: 
+  [31mx[0m Unexpected token `section`. Expected jsx identifier
+    ,-[[36;1;4mD:\Projects\New folder\components\sections\CopilotChat.tsx[0m:35:1]
+ [2m35[0m |   };
+ [2m36[0m | 
+ [2m37[0m |   return (
+ [2m38[0m |     <section id="faqs" className="bg-soft-sky pt-0 pb-16 lg:pt-0 lg:pb-20 relative overflow-hidden">
+    : [31;1m     ^^^^^^^[0m
+ [2m39[0m |       {/* Restrained atmospheric background — two soft layers for depth behind the chat */}
+ [2m40[0m |       <ParallaxLayer depth="atmosphere" className="absolute inset-0">
+ [2m41[0m |         <div
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+./app/page.tsx
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: EPERM: operation not permitted, rename 'D:\Projects\New folder\.next\cache\webpack\server-development\1.pack.gz_' -> 'D:\Projects\New folder\.next\cache\webpack\server-development\1.pack.gz'
+ ⨯ ./components/sections/BillsStress.tsx
+Error: 
+  [31mx[0m Unexpected token `section`. Expected jsx identifier
+     ,-[[36;1;4mD:\Projects\New folder\components\sections\BillsStress.tsx[0m:146:1]
+ [2m146[0m |   }, []);
+ [2m147[0m | 
+ [2m148[0m |   return (
+ [2m149[0m |     <section id="about" className="overflow-hidden bg-white pt-[58px] pb-[10px] lg:pt-[90px] lg:pb-[10px] relative">
+     : [31;1m     ^^^^^^^[0m
+ [2m150[0m |       {/* Atmospheric tension layer - warm tint opposing watermark (opposing vertical drift) */
+ [2m151[0m |       <ParallaxLayer depth="atmosphere" speedOverride={-0.05} horizontalDriftOverride={0.015} className="absolute inset-0 opacity-35">
+ [2m152[0m |         <div
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/sections/BillsStress.tsx
+./app/page.tsx
+ ⨯ ./components/sections/BillsStress.tsx
+Error: 
+  [31mx[0m Unexpected token `section`. Expected jsx identifier
+     ,-[[36;1;4mD:\Projects\New folder\components\sections\BillsStress.tsx[0m:146:1]
+ [2m146[0m |   }, []);
+ [2m147[0m | 
+ [2m148[0m |   return (
+ [2m149[0m |     <section id="about" className="overflow-hidden bg-white pt-[58px] pb-[10px] lg:pt-[90px] lg:pb-[10px] relative">
+     : [31;1m     ^^^^^^^[0m
+ [2m150[0m |       {/* Atmospheric tension layer - warm tint opposing watermark (opposing vertical drift) */
+ [2m151[0m |       <ParallaxLayer depth="atmosphere" speedOverride={-0.05} horizontalDriftOverride={0.015} className="absolute inset-0 opacity-35">
+ [2m152[0m |         <div
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/sections/BillsStress.tsx
+./app/page.tsx
+ ⨯ ./components/sections/BillsStress.tsx
+Error: 
+  [31mx[0m Unexpected token `section`. Expected jsx identifier
+     ,-[[36;1;4mD:\Projects\New folder\components\sections\BillsStress.tsx[0m:146:1]
+ [2m146[0m |   }, []);
+ [2m147[0m | 
+ [2m148[0m |   return (
+ [2m149[0m |     <section id="about" className="overflow-hidden bg-white pt-[58px] pb-[10px] lg:pt-[90px] lg:pb-[10px] relative">
+     : [31;1m     ^^^^^^^[0m
+ [2m150[0m |       {/* Atmospheric tension layer - warm tint opposing watermark (opposing vertical drift) */
+ [2m151[0m |       <ParallaxLayer depth="atmosphere" speedOverride={-0.05} horizontalDriftOverride={0.015} className="absolute inset-0 opacity-35">
+ [2m152[0m |         <div
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/sections/BillsStress.tsx
+./app/page.tsx
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'D:\Projects\New folder\.next\cache\webpack\server-development\1.pack.gz_' -> 'D:\Projects\New folder\.next\cache\webpack\server-development\1.pack.gz'
+ ⨯ ./components/sections/BillsStress.tsx
+Error: 
+  [31mx[0m Unexpected token `section`. Expected jsx identifier
+     ,-[[36;1;4mD:\Projects\New folder\components\sections\BillsStress.tsx[0m:146:1]
+ [2m146[0m |   }, []);
+ [2m147[0m | 
+ [2m148[0m |   return (
+ [2m149[0m |     <section id="about" className="overflow-hidden bg-white pt-[58px] pb-[10px] lg:pt-[90px] lg:pb-[10px] relative">
+     : [31;1m     ^^^^^^^[0m
+ [2m150[0m |       {/* Atmospheric tension layer - warm tint opposing watermark (opposing vertical drift) */
+ [2m151[0m |       <ParallaxLayer depth="atmosphere" speedOverride={-0.05} horizontalDriftOverride={0.015} className="absolute inset-0 opacity-35">
+ [2m152[0m |         <div
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/sections/BillsStress.tsx
+./app/page.tsx
+ ⨯ ./components/sections/BillsStress.tsx
+Error: 
+  [31mx[0m Unexpected token `section`. Expected jsx identifier
+     ,-[[36;1;4mD:\Projects\New folder\components\sections\BillsStress.tsx[0m:146:1]
+ [2m146[0m |   }, []);
+ [2m147[0m | 
+ [2m148[0m |   return (
+ [2m149[0m |     <section id="about" className="overflow-hidden bg-white pt-[58px] pb-[10px] lg:pt-[90px] lg:pb-[10px] relative">
+     : [31;1m     ^^^^^^^[0m
+ [2m150[0m |       {/* Atmospheric tension layer - warm tint opposing watermark (opposing vertical drift) */
+ [2m151[0m |       <ParallaxLayer depth="atmosphere" speedOverride={-0.05} horizontalDriftOverride={0.015} className="absolute inset-0 opacity-35">
+ [2m152[0m |         <div
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/sections/BillsStress.tsx
+./app/page.tsx
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'D:\Projects\New folder\.next\cache\webpack\server-development\0.pack.gz_' -> 'D:\Projects\New folder\.next\cache\webpack\server-development\0.pack.gz'
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'D:\Projects\New folder\.next\cache\webpack\client-development\1.pack.gz_' -> 'D:\Projects\New folder\.next\cache\webpack\client-development\1.pack.gz'
+ ⨯ ./components/sections/BillsStress.tsx
+Error: 
+  [31mx[0m Unexpected token `section`. Expected jsx identifier
+     ,-[[36;1;4mD:\Projects\New folder\components\sections\BillsStress.tsx[0m:146:1]
+ [2m146[0m |   }, []);
+ [2m147[0m | 
+ [2m148[0m |   return (
+ [2m149[0m |     <section id="about" className="overflow-hidden bg-white pt-[58px] pb-[10px] lg:pt-[90px] lg:pb-[10px] relative">
+     : [31;1m     ^^^^^^^[0m
+ [2m150[0m |       {/* Atmospheric tension layer - warm tint opposing watermark (opposing vertical drift) */
+ [2m151[0m |       <ParallaxLayer depth="atmosphere" speedOverride={-0.05} horizontalDriftOverride={0.015} className="absolute inset-0 opacity-35">
+ [2m152[0m |         <div
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/sections/BillsStress.tsx
+./app/page.tsx
+ ⨯ ./components/sections/BillsStress.tsx
+Error: 
+  [31mx[0m Unexpected token `section`. Expected jsx identifier
+     ,-[[36;1;4mD:\Projects\New folder\components\sections\BillsStress.tsx[0m:146:1]
+ [2m146[0m |   }, []);
+ [2m147[0m | 
+ [2m148[0m |   return (
+ [2m149[0m |     <section id="about" className="overflow-hidden bg-white pt-[58px] pb-[10px] lg:pt-[90px] lg:pb-[10px] relative">
+     : [31;1m     ^^^^^^^[0m
+ [2m150[0m |       {/* Atmospheric tension layer - warm tint opposing watermark (opposing vertical drift) */
+ [2m151[0m |       <ParallaxLayer depth="atmosphere" speedOverride={-0.05} horizontalDriftOverride={0.015} className="absolute inset-0 opacity-35">
+ [2m152[0m |         <div
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/sections/BillsStress.tsx
+./app/page.tsx
+ ⨯ ./components/sections/BillsStress.tsx
+Error: 
+  [31mx[0m Unexpected token `section`. Expected jsx identifier
+     ,-[[36;1;4mD:\Projects\New folder\components\sections\BillsStress.tsx[0m:146:1]
+ [2m146[0m |   }, []);
+ [2m147[0m | 
+ [2m148[0m |   return (
+ [2m149[0m |     <section id="about" className="overflow-hidden bg-white pt-[58px] pb-[10px] lg:pt-[90px] lg:pb-[10px] relative">
+     : [31;1m     ^^^^^^^[0m
+ [2m150[0m |       {/* Atmospheric tension layer - warm tint opposing watermark (opposing vertical drift) */
+ [2m151[0m |       <ParallaxLayer depth="atmosphere" speedOverride={-0.05} horizontalDriftOverride={0.015} className="absolute inset-0 opacity-35">
+ [2m152[0m |         <div
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/sections/BillsStress.tsx
+./app/page.tsx
+ ⨯ ./components/sections/BillsStress.tsx
+Error: 
+  [31mx[0m Unexpected token `section`. Expected jsx identifier
+     ,-[[36;1;4mD:\Projects\New folder\components\sections\BillsStress.tsx[0m:146:1]
+ [2m146[0m |   }, []);
+ [2m147[0m | 
+ [2m148[0m |   return (
+ [2m149[0m |     <section id="about" className="overflow-hidden bg-white pt-[58px] pb-[10px] lg:pt-[90px] lg:pb-[10px] relative">
+     : [31;1m     ^^^^^^^[0m
+ [2m150[0m |       {/* Atmospheric tension layer - warm tint opposing watermark (opposing vertical drift) */
+ [2m151[0m |       <ParallaxLayer depth="atmosphere" speedOverride={-0.05} horizontalDriftOverride={0.015} className="absolute inset-0 opacity-35">
+ [2m152[0m |         <div
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/sections/BillsStress.tsx
+./app/page.tsx
+ ⨯ ./components/sections/BillsStress.tsx
+Error: 
+  [31mx[0m Unexpected token `section`. Expected jsx identifier
+     ,-[[36;1;4mD:\Projects\New folder\components\sections\BillsStress.tsx[0m:146:1]
+ [2m146[0m |   }, []);
+ [2m147[0m | 
+ [2m148[0m |   return (
+ [2m149[0m |     <section id="about" className="overflow-hidden bg-white pt-[58px] pb-[10px] lg:pt-[90px] lg:pb-[10px] relative">
+     : [31;1m     ^^^^^^^[0m
+ [2m150[0m |       {/* Atmospheric tension layer - warm tint opposing watermark (opposing vertical drift) */
+ [2m151[0m |       <ParallaxLayer depth="atmosphere" speedOverride={-0.05} horizontalDriftOverride={0.015} className="absolute inset-0 opacity-35">
+ [2m152[0m |         <div
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/sections/BillsStress.tsx
+./app/page.tsx
+ ⚠ ./components/sections/BillsStress.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/BillsStress.tsx
+
+./components/sections/BillsStress.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/BillsStress.tsx
+
+./components/sections/Consultants.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Consultants.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/LenderBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LenderBand.tsx
+
+./components/sections/LenderBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LenderBand.tsx
+
+./components/sections/LoanOffers.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LoanOffers.tsx
+
+./components/sections/LoanOffers.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LoanOffers.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/BillsStress.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/BillsStress.tsx
+
+./components/sections/BillsStress.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/BillsStress.tsx
+
+./components/sections/Consultants.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Consultants.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/LenderBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LenderBand.tsx
+
+./components/sections/LenderBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LenderBand.tsx
+
+./components/sections/LoanOffers.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LoanOffers.tsx
+
+./components/sections/LoanOffers.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LoanOffers.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/layout/Footer.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/layout/Footer.tsx
+./app/layout.tsx
+ ⚠ ./components/sections/BillsStress.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/BillsStress.tsx
+
+./components/sections/BillsStress.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/BillsStress.tsx
+
+./components/sections/Consultants.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Consultants.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'RevealLines' is not exported from '@/components/ui/motion' (imported as 'RevealLines').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/LenderBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LenderBand.tsx
+
+./components/sections/LenderBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LenderBand.tsx
+
+./components/sections/LoanOffers.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LoanOffers.tsx
+
+./components/sections/LoanOffers.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LoanOffers.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/BillsStress.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/BillsStress.tsx
+
+./components/sections/BillsStress.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/BillsStress.tsx
+
+./components/sections/Consultants.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Consultants.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'RevealLines' is not exported from '@/components/ui/motion' (imported as 'RevealLines').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/LenderBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LenderBand.tsx
+
+./components/sections/LenderBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LenderBand.tsx
+
+./components/sections/LoanOffers.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LoanOffers.tsx
+
+./components/sections/LoanOffers.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LoanOffers.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/layout/Footer.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/layout/Footer.tsx
+./app/layout.tsx
+ ⚠ ./components/sections/BillsStress.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/BillsStress.tsx
+
+./components/sections/BillsStress.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/BillsStress.tsx
+
+./components/sections/Consultants.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Consultants.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'RevealLines' is not exported from '@/components/ui/motion' (imported as 'RevealLines').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/LenderBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LenderBand.tsx
+
+./components/sections/LenderBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LenderBand.tsx
+
+./components/sections/LoanOffers.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LoanOffers.tsx
+
+./components/sections/LoanOffers.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LoanOffers.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/BillsStress.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/BillsStress.tsx
+
+./components/sections/BillsStress.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/BillsStress.tsx
+
+./components/sections/Consultants.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Consultants.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'RevealLines' is not exported from '@/components/ui/motion' (imported as 'RevealLines').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/LenderBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LenderBand.tsx
+
+./components/sections/LenderBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LenderBand.tsx
+
+./components/sections/LoanOffers.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LoanOffers.tsx
+
+./components/sections/LoanOffers.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LoanOffers.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/layout/Footer.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/layout/Footer.tsx
+./app/layout.tsx
+ ⚠ ./components/sections/BillsStress.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/BillsStress.tsx
+
+./components/sections/BillsStress.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/BillsStress.tsx
+
+./components/sections/Consultants.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Consultants.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'RevealLines' is not exported from '@/components/ui/motion' (imported as 'RevealLines').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/LenderBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LenderBand.tsx
+
+./components/sections/LenderBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LenderBand.tsx
+
+./components/sections/LoanOffers.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LoanOffers.tsx
+
+./components/sections/LoanOffers.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LoanOffers.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/BillsStress.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/BillsStress.tsx
+
+./components/sections/BillsStress.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/BillsStress.tsx
+
+./components/sections/Consultants.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Consultants.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'RevealLines' is not exported from '@/components/ui/motion' (imported as 'RevealLines').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/LenderBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LenderBand.tsx
+
+./components/sections/LenderBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LenderBand.tsx
+
+./components/sections/LoanOffers.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LoanOffers.tsx
+
+./components/sections/LoanOffers.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LoanOffers.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/layout/Footer.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/layout/Footer.tsx
+./app/layout.tsx
+ ⚠ ./components/sections/BillsStress.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/BillsStress.tsx
+
+./components/sections/BillsStress.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/BillsStress.tsx
+
+./components/sections/Consultants.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Consultants.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'RevealLines' is not exported from '@/components/ui/motion' (imported as 'RevealLines').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/LenderBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LenderBand.tsx
+
+./components/sections/LenderBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LenderBand.tsx
+
+./components/sections/LoanOffers.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LoanOffers.tsx
+
+./components/sections/LoanOffers.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LoanOffers.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/BillsStress.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/BillsStress.tsx
+
+./components/sections/BillsStress.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/BillsStress.tsx
+
+./components/sections/Consultants.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Consultants.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'RevealLines' is not exported from '@/components/ui/motion' (imported as 'RevealLines').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Hero.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Hero.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/LenderBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LenderBand.tsx
+
+./components/sections/LenderBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LenderBand.tsx
+
+./components/sections/LoanOffers.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LoanOffers.tsx
+
+./components/sections/LoanOffers.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LoanOffers.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/layout/Footer.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/layout/Footer.tsx
+./app/layout.tsx
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'D:\Projects\New folder\.next\cache\webpack\client-development\0.pack.gz_' -> 'D:\Projects\New folder\.next\cache\webpack\client-development\0.pack.gz'
+<w> [webpack.cache.PackFileCacheStrategy] Restoring pack failed from D:\Projects\New folder\.next\cache\webpack\client-development.pack.gz: Error: too many length or distance symbols
+ ⚠ ./components/sections/BillsStress.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/BillsStress.tsx
+
+./components/sections/BillsStress.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/BillsStress.tsx
+
+./components/sections/Consultants.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Consultants.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'RevealLines' is not exported from '@/components/ui/motion' (imported as 'RevealLines').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/LenderBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LenderBand.tsx
+
+./components/sections/LenderBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LenderBand.tsx
+
+./components/sections/LoanOffers.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LoanOffers.tsx
+
+./components/sections/LoanOffers.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LoanOffers.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/BillsStress.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/BillsStress.tsx
+
+./components/sections/BillsStress.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/BillsStress.tsx
+
+./components/sections/Consultants.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Consultants.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'RevealLines' is not exported from '@/components/ui/motion' (imported as 'RevealLines').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/LenderBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LenderBand.tsx
+
+./components/sections/LenderBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LenderBand.tsx
+
+./components/sections/LoanOffers.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LoanOffers.tsx
+
+./components/sections/LoanOffers.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LoanOffers.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/layout/Footer.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/layout/Footer.tsx
+./app/layout.tsx
+ ⚠ ./components/sections/BillsStress.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/BillsStress.tsx
+
+./components/sections/BillsStress.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/BillsStress.tsx
+
+./components/sections/Consultants.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Consultants.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'RevealLines' is not exported from '@/components/ui/motion' (imported as 'RevealLines').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/LoanOffers.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LoanOffers.tsx
+
+./components/sections/LoanOffers.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LoanOffers.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/BillsStress.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/BillsStress.tsx
+
+./components/sections/BillsStress.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/BillsStress.tsx
+
+./components/sections/Consultants.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Consultants.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'RevealLines' is not exported from '@/components/ui/motion' (imported as 'RevealLines').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/LoanOffers.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LoanOffers.tsx
+
+./components/sections/LoanOffers.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LoanOffers.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/layout/Footer.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/layout/Footer.tsx
+./app/layout.tsx
+ ⚠ ./components/sections/Consultants.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Consultants.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'RevealLines' is not exported from '@/components/ui/motion' (imported as 'RevealLines').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/LoanOffers.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LoanOffers.tsx
+
+./components/sections/LoanOffers.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LoanOffers.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/Consultants.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Consultants.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'RevealLines' is not exported from '@/components/ui/motion' (imported as 'RevealLines').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/LoanOffers.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LoanOffers.tsx
+
+./components/sections/LoanOffers.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/LoanOffers.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/layout/Footer.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/layout/Footer.tsx
+./app/layout.tsx
+ ⚠ ./components/sections/Consultants.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Consultants.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'RevealLines' is not exported from '@/components/ui/motion' (imported as 'RevealLines').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/Consultants.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Consultants.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'RevealLines' is not exported from '@/components/ui/motion' (imported as 'RevealLines').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/sections/ThreeSteps.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/ThreeSteps.tsx
+
+./components/layout/Footer.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/layout/Footer.tsx
+./app/layout.tsx
+ ⚠ ./components/sections/Consultants.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Consultants.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'RevealLines' is not exported from '@/components/ui/motion' (imported as 'RevealLines').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/sections/Consultants.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Consultants.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'RevealLines' is not exported from '@/components/ui/motion' (imported as 'RevealLines').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/sections/SavingsCalculator.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/SavingsCalculator.tsx
+
+./components/layout/Footer.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/layout/Footer.tsx
+./app/layout.tsx
+ ⚠ ./components/sections/Consultants.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Consultants.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'RevealLines' is not exported from '@/components/ui/motion' (imported as 'RevealLines').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Consultants.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Consultants.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/CtaBand.tsx
+Attempted import error: 'RevealLines' is not exported from '@/components/ui/motion' (imported as 'RevealLines').
+
+Import trace for requested module:
+./components/sections/CtaBand.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/layout/Footer.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/layout/Footer.tsx
+./app/layout.tsx
+ ⚠ ./components/sections/Consultants.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Consultants.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Consultants.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Consultants.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/sections/Journey.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Journey.tsx
+
+./components/layout/Footer.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/layout/Footer.tsx
+./app/layout.tsx
+ ⚠ ./components/sections/Consultants.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Consultants.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/Consultants.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Consultants.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/layout/Footer.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/layout/Footer.tsx
+./app/layout.tsx
+ ⚠ ./components/sections/Consultants.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Consultants.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/Consultants.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/Consultants.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/layout/Footer.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/layout/Footer.tsx
+./app/layout.tsx
+ ⚠ ./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/layout/Footer.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/layout/Footer.tsx
+./app/layout.tsx
+ ⚠ ./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/sections/CopilotChat.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/sections/CopilotChat.tsx
+
+./components/layout/Footer.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/layout/Footer.tsx
+./app/layout.tsx
+ ⚠ ./components/layout/Footer.tsx
+Attempted import error: 'ParallaxLayer' is not exported from '@/components/ui/scroll-fx' (imported as 'ParallaxLayer').
+
+Import trace for requested module:
+./components/layout/Footer.tsx
+./app/layout.tsx
