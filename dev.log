@@ -1,0 +1,40 @@
+
+> priority-plus@0.1.0 dev
+> next dev -p 3112
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3112
+
+ ✓ Starting...
+ ✓ Ready in 1879ms
+ ○ Compiling / ...
+ ✓ Compiled / in 3.7s (644 modules)
+ GET / 200 in 3976ms
+ GET / 200 in 66ms
+ ✓ Compiled in 478ms (635 modules)
+ ✓ Compiled in 588ms (635 modules)
+ GET / 200 in 165ms
+ ✓ Compiled in 709ms (635 modules)
+ ✓ Compiled in 423ms (635 modules)
+ GET / 200 in 134ms
+ ✓ Compiled in 522ms (635 modules)
+ ✓ Compiled /_not-found in 125ms (624 modules)
+ GET /_next/static/webpack/8f5b58f5720f44c3.webpack.hot-update.json 404 in 301ms
+ GET / 200 in 109ms
+ ○ Compiling /_error ...
+ GET / 500 in 13ms
+ ✓ Compiled /_not-found in 592ms (851 modules)
+ GET / 200 in 72ms
+ GET /_next/static/webpack/75e0cc5ae8ab6de6.webpack.hot-update.json 404 in 796ms
+ GET / 200 in 104ms
+ GET / 200 in 68ms
+ ✓ Compiled in 474ms (862 modules)
+ GET / 500 in 7ms
+ GET /_next/static/chunks/fallback/webpack.js 500 in 164ms
+ GET /_next/static/chunks/fallback/main.js 500 in 164ms
+ GET /_next/static/chunks/fallback/react-refresh.js 500 in 165ms
+ GET /_next/static/chunks/fallback/pages/_app.js 500 in 161ms
+ GET /_next/static/chunks/fallback/pages/_error.js 500 in 161ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 515ms (865 modules)
+ ✓ Compiled in 375ms (863 modules)

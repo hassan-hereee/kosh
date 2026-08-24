@@ -1,0 +1,343 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --shell: 1200px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-white font-sans text-ink antialiased;
+  }
+
+  /* The design uses a square full-stop / square i-dot (Plus Jakarta Sans). */
+  ::selection {
+    @apply bg-brand-500/20 text-brand-900;
+  }
+}
+
+@layer components {
+  /* 1200px content shell, centred — matches the 120px side gutters at 1440px */
+  .shell {
+    @apply mx-auto w-full max-w-shell px-6 lg:px-0;
+  }
+
+  /* Buttons ---------------------------------------------------------------- */
+  .btn {
+    @apply inline-flex select-none items-center justify-center gap-2 rounded-full font-bold transition-all duration-300 ease-silk active:scale-[.97] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500/50 focus-visible:ring-offset-2;
+  }
+
+  /* Solid bright-blue → deep-blue gradient on hover (Component 188) */
+  .btn-primary {
+    @apply btn bg-brand-500 text-white shadow-pill hover:bg-gradient-to-r hover:from-brand-900 hover:to-brand-500 active:scale-[.985];
+  }
+
+  .btn-outline {
+    @apply btn border-2 border-brand-500 bg-white text-brand-700 hover:bg-brand-700 hover:text-white hover:border-brand-700;
+  }
+
+  /* White pill w/ blue label, used on the dark CTA band (Component 178) */
+  .btn-on-dark {
+    @apply btn bg-white text-brand-500 hover:bg-brand-50;
+  }
+
+  .btn-ghost-on-dark {
+    @apply btn border border-white/70 bg-transparent text-white hover:bg-white hover:text-brand-700;
+  }
+
+  .btn-md {
+    @apply h-[40px] px-5 text-[13px];
+  }
+
+  .btn-lg {
+    @apply h-[46px] px-7 text-sm;
+  }
+
+  /* Cards ----------------------------------------------------------------- */
+  .card {
+    @apply rounded-card border border-slate-200/70 bg-white shadow-card;
+  }
+
+  .card-muted {
+    @apply rounded-card border border-slate-200/70 bg-surface-muted;
+  }
+
+  /* Range slider ---------------------------------------------------------- */
+  .range {
+    @apply h-1.5 w-full cursor-pointer appearance-none rounded-full bg-brand-200;
+  }
+
+  .range::-webkit-slider-thumb {
+    @apply h-[18px] w-[18px] appearance-none rounded-full border-[3px] border-white bg-brand-700;
+    box-shadow: 0 1px 4px rgba(15, 26, 46, 0.3);
+  }
+
+  .range::-moz-range-thumb {
+    @apply h-[18px] w-[18px] rounded-full border-[3px] border-white bg-brand-700;
+    box-shadow: 0 1px 4px rgba(15, 26, 46, 0.3);
+  }
+
+  .range-on-dark {
+    @apply bg-white/25;
+  }
+
+  .range-on-dark::-webkit-slider-thumb {
+    @apply border-brand-900 bg-white;
+  }
+}
+
+@layer utilities {
+  /* Custom cursor active — native cursor hidden while CursorTracker runs */
+  html.pp-cursor-active,
+  html.pp-cursor-active * {
+    cursor: none !important;
+  }
+
+  html.pp-cursor-active input:not([type="range"]),
+  html.pp-cursor-active textarea {
+    cursor: text !important;
+  }
+
+  /* Stagger system ---------------------------------------------------------
+     Container gets .stagger-in when it scrolls into view (see ui/Stagger.tsx).
+     Any descendant marked [data-stagger] fades + lifts in with an incremental
+     transition-delay assigned by JS. Uses the standalone `translate`
+     property so it never conflicts with Tailwind transform utilities. */
+  [data-stagger] {
+    opacity: 0;
+    translate: 0 20px;
+    transition:
+      opacity 0.65s cubic-bezier(0.22, 0.61, 0.36, 1),
+      translate 0.65s cubic-bezier(0.22, 0.61, 0.36, 1);
+    will-change: opacity, translate;
+  }
+
+  .stagger-in [data-stagger] {
+    opacity: 1;
+    translate: none;
+  }
+
+  /* Animated gradient text (Hero accent word) */
+  .text-gradient {
+    background: linear-gradient(100deg, #174195 0%, #2462e8 30%, #6fb6ff 52%, #2462e8 74%, #174195 100%);
+    background-size: 220% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradient-pan 7s ease-in-out infinite;
+  }
+
+  @keyframes gradient-pan {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  /* Same effect, tuned for deep-navy backgrounds */
+  .text-gradient-light {
+    background: linear-gradient(100deg, #ffffff 0%, #bfdcff 30%, #6fb6ff 52%, #bfdcff 74%, #ffffff 100%);
+    background-size: 220% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradient-pan 7s ease-in-out infinite;
+  }
+
+  /* Animated gradient border (savings result panel). Drawn via a masked
+     pseudo-element so the host keeps its own bg/shadow untouched. */
+  .border-gradient-animated {
+    position: relative;
+  }
+
+  .border-gradient-animated::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1.5px;
+    background: linear-gradient(120deg, rgba(143, 210, 251, 0.85), rgba(36, 98, 232, 0.05) 38%, rgba(143, 210, 251, 0.55) 62%, rgba(36, 98, 232, 0.05));
+    background-size: 300% 300%;
+    animation: gradient-pan 7s ease-in-out infinite;
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  /* Journey timeline dots — activated by ScrollTrigger progress */
+  .tl-dot {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(36, 98, 232, 0);
+    transition: transform 0.35s cubic-bezier(0.22, 0.61, 0.36, 1), box-shadow 0.35s cubic-bezier(0.22, 0.61, 0.36, 1), background-color 0.35s ease;
+  }
+
+  .tl-dot.is-active {
+    transform: scale(1.45);
+    box-shadow: 0 0 0 6px rgba(36, 98, 232, 0.16);
+  }
+
+  /* Hero wash: pale sky blue top-left → white centre → pale blue right */
+  .bg-hero {
+    background:
+      radial-gradient(900px 520px at 88% 12%, #EAF1FB 0%, rgba(234, 241, 251, 0) 62%),
+      radial-gradient(760px 460px at -6% -8%, #CFE3F0 0%, rgba(207, 227, 240, 0) 66%),
+      linear-gradient(160deg, #D8E9F3 0%, #E7F0F9 26%, #FBFCFE 58%, #F3F7FC 100%);
+  }
+
+  .bg-band {
+    background-image:
+      url(/grid-pattern.svg),
+      linear-gradient(90deg, #174195 0%, #1B4AA6 52%, #174195 100%);
+    background-repeat: repeat, no-repeat;
+    background-size: 1440px 400px, 100% 100%;
+    background-position: center, center;
+  }
+
+  .bg-cta {
+    background-image:
+      url(/grid-pattern.svg),
+      radial-gradient(420px 220px at 82% 18%, #1F55B4 0%, rgba(31, 85, 180, 0) 68%),
+      linear-gradient(155deg, #16407F 0%, #102F63 55%, #0C2350 100%);
+    background-repeat: repeat, no-repeat, no-repeat;
+    background-size: 1440px 400px, 100% 100%, 100% 100%;
+    background-position: center, center, center;
+  }
+
+  /* Deep navy panel used by the savings result + booking widgets */
+  .bg-panel-navy {
+    background-image:
+      url(/grid-pattern.svg),
+      radial-gradient(420px 220px at 82% 18%, #1F55B4 0%, rgba(31, 85, 180, 0) 68%),
+      linear-gradient(155deg, #16407F 0%, #102F63 55%, #0C2350 100%);
+    background-repeat: repeat, no-repeat, no-repeat;
+    background-size: 1440px 400px, 100% 100%, 100% 100%;
+    background-position: center, center, center;
+  }
+
+  /* Variant: navy panel without the grid overlay */
+  .bg-panel-navy.no-grid {
+    background-image:
+      radial-gradient(420px 220px at 82% 18%, #1F55B4 0%, rgba(31, 85, 180, 0) 68%),
+      linear-gradient(155deg, #16407F 0%, #102F63 55%, #0C2350 100%);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100% 100%, 100% 100%;
+    background-position: center, center;
+  }
+
+  .bg-soft-sky {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F7FAFE 40%, #EEF3FD 100%);
+  }
+
+  .mask-fade-x {
+    mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .pause-on-hover:hover {
+    animation-play-state: paused;
+  }
+
+  /* Chat bubble / list-item entrance */
+  .msg-in {
+    animation: msg-in 0.38s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  }
+
+  @keyframes msg-in {
+    from {
+      opacity: 0;
+      transform: translateY(10px) scale(0.98);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  /* Premium sheen sweep for primary CTAs */
+  .btn-sheen {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn-sheen::after {
+    content: "";
+    position: absolute;
+    top: -40%;
+    left: -75%;
+    width: 45%;
+    height: 180%;
+    background: linear-gradient(105deg, transparent, rgba(255, 255, 255, 0.45), transparent);
+    transform: skewX(-20deg);
+    transition: left 0.65s ease;
+    pointer-events: none;
+  }
+
+  .btn-sheen:hover::after {
+    left: 135%;
+  }
+
+  /* Hero scroll cue */
+  @keyframes cue-dot {
+    0% {
+      transform: translate(-50%, 0);
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%, 22px);
+      opacity: 0;
+    }
+  }
+
+  .scroll-cue__dot {
+    animation: cue-dot 1.8s cubic-bezier(0.22, 0.61, 0.36, 1) infinite;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  [data-stagger] {
+    opacity: 1 !important;
+    translate: none !important;
+    transition: none !important;
+  }
+
+  .scroll-cue {
+    display: none !important;
+  }
+}
