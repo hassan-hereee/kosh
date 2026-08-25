@@ -16,9 +16,15 @@ export default function Header() {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState("Home");
   const [scrolled, setScrolled] = useState(false);
+  const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 8);
+    const onScroll = () => {
+      setScrolled(window.scrollY > 8);
+      const el = document.documentElement;
+      const max = el.scrollHeight - el.clientHeight;
+      setProgress(max > 0 ? Math.min(1, window.scrollY / max) : 0);
+    };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -55,6 +61,14 @@ export default function Header() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 pt-[26px] motion-safe:animate-[header-in_0.7s_cubic-bezier(0.22,0.61,0.36,1)_both]">
+      {/* scroll progress */}
+      <div className="absolute inset-x-0 top-0 z-[60] h-[3px] bg-transparent">
+        <div
+          className="h-full origin-left bg-brand-500 transition-[width] duration-100 ease-out"
+          style={{ width: `${progress * 100}%` }}
+        />
+      </div>
+
       <div className="shell">
         <div className="relative">
           {/* pulsing blue glow aura */}
@@ -70,29 +84,37 @@ export default function Header() {
                 : "scale-[0.96] bg-white/60 shadow-[0_2px_12px_rgba(15,26,46,0.06)]",
             )}
           >
-          <Link href="/" aria-label="PriorityPlus Financial — home">
+          <Link
+            href="/"
+            aria-label="PriorityPlus Financial — home"
+            className="motion-safe:animate-[rise-in_0.5s_ease-out_both]"
+          >
             <Logo />
           </Link>
 
           {/* Desktop nav */}
-          <ul className="hidden items-center gap-[38px] lg:flex">
-            {NAV_LINKS.map((link) => {
+          <ul className="hidden items-center gap-[14px] lg:flex">
+            {NAV_LINKS.map((link, i) => {
               const isActive = active === link.label;
               return (
                 <li key={link.label}>
                   <Link
                     href={link.href}
                     onClick={() => setActive(link.label)}
+                    style={{ animationDelay: `${0.16 + i * 0.07}s` }}
                     className={cn(
-                      "group relative text-[13.5px] font-medium transition-colors",
+                      "group relative rounded-full px-3 py-1.5 text-[13.5px] font-medium transition-colors duration-200 motion-safe:animate-[rise-in_0.5s_ease-out_both]",
                       isActive ? "text-brand-500" : "text-ink hover:text-brand-500",
                     )}
                   >
                     {link.label}
                     <span
+                      aria-hidden
                       className={cn(
-                        "absolute -bottom-[3px] left-0 h-[1.5px] w-full origin-left bg-brand-500 transition-transform duration-200",
-                        isActive ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100",
+                        "absolute -bottom-[3px] left-1/2 h-[2px] w-6 -translate-x-1/2 rounded-full bg-brand-500 transition-all duration-300",
+                        isActive
+                          ? "scale-x-100 opacity-100"
+                          : "scale-x-0 opacity-0 group-hover:scale-x-100 group-hover:opacity-100",
                       )}
                     />
                   </Link>
@@ -106,15 +128,23 @@ export default function Header() {
               href={PHONE.href}
               className="hidden items-center gap-[7px] text-[13.5px] font-medium text-ink transition-colors hover:text-brand-500 md:flex"
             >
+              <span className="relative flex h-[7px] w-[7px]" aria-hidden>
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-brand-500/70" />
+                <span className="relative inline-flex h-[7px] w-[7px] rounded-full bg-brand-500" />
+              </span>
               <PhoneIcon className="h-[15px] w-[15px] text-brand-700" />
               {PHONE.display}
             </a>
             <Magnetic strength={0.22}>
               <Link
                 href="#quote"
-                className="btn-primary hidden h-[46px] px-[26px] text-[14px] sm:inline-flex"
+                className="btn-primary relative overflow-hidden hidden h-[46px] px-[26px] text-[14px] sm:inline-flex motion-safe:animate-[rise-in_0.5s_ease-out_0.5s_both]"
               >
-                Check My Rate
+                <span className="relative z-10">Check My Rate</span>
+                <span
+                  aria-hidden
+                  className="pointer-events-none absolute inset-y-0 -left-1/2 z-0 w-1/2 -skew-x-12 bg-gradient-to-r from-transparent via-white/40 to-transparent blur-sm motion-safe:animate-[cta-sheen_3.8s_ease-in-out_infinite]"
+                />
               </Link>
             </Magnetic>
             <button
