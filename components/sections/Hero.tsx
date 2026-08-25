@@ -77,7 +77,7 @@ export default function Hero() {
           </div>
 
           {/* ---------------- wizard column ---------------- */}
-          <Rise delay={260} className="relative mt-[16px] pb-10">
+          <Rise delay={260} className="relative mt-[16px] h-full">
             <QuoteWizard />
           </Rise>
         </div>
