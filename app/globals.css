@@ -319,6 +319,42 @@
   .scroll-cue__dot {
     animation: cue-dot 1.8s cubic-bezier(0.22, 0.61, 0.36, 1) infinite;
   }
+
+  /* Initial page loader — two-door premium reveal -------------------------
+     Two full-height panels meeting at the exact centre. Each panel is lit
+     toward the seam so a soft glow reads at the centre line, reinforcing
+     the "doors" feel. The reveal is driven by transform (see PageIntro.tsx),
+     never opacity or blur. */
+  .pp-intro__panel {
+    background-color: #102f63;
+  }
+
+  .pp-intro__panel--left {
+    background-image:
+      url(/grid-pattern.svg),
+      radial-gradient(480px 280px at 100% 18%, rgba(54, 122, 224, 0.5) 0%, rgba(54, 122, 224, 0) 70%),
+      linear-gradient(90deg, #0c2350 0%, #11336a 60%, #1b4aa6 100%);
+    background-repeat: repeat, no-repeat, no-repeat;
+    background-size: 1440px 400px, 100% 100%, 100% 100%;
+    background-position: center, center, center;
+  }
+
+  .pp-intro__panel--right {
+    background-image:
+      url(/grid-pattern.svg),
+      radial-gradient(480px 280px at 0% 18%, rgba(54, 122, 224, 0.5) 0%, rgba(54, 122, 224, 0) 70%),
+      linear-gradient(270deg, #0c2350 0%, #11336a 60%, #1b4aa6 100%);
+    background-repeat: repeat, no-repeat, no-repeat;
+    background-size: 1440px 400px, 100% 100%, 100% 100%;
+    background-position: center, center, center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* Immediate, invisible reveal for reduced-motion users. */
+  .pp-intro {
+    display: none !important;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
