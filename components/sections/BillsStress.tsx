@@ -54,7 +54,6 @@ export default function BillsStress() {
       gsap.set(card, { autoAlpha: 0, scale: 0.75, xPercent: -50, yPercent: -50 });
 
       /* ---- mouse depth: each bill drifts with the cursor at its own depth ---- */
-      let mouseLive = true;
       const setters = bills.map((b, i) => ({
         x: gsap.quickTo(b, "x", { duration: 0.75, ease: "power3" }),
         y: gsap.quickTo(b, "y", { duration: 0.75, ease: "power3" }),
@@ -62,7 +61,7 @@ export default function BillsStress() {
       }));
 
       const onMove = (e: MouseEvent) => {
-        if (!mouseLive) return;
+        if (!mouseLiveRef.current) return;
         const r = stage.getBoundingClientRect();
         const nx = (e.clientX - r.left) / r.width - 0.5;
         const ny = (e.clientY - r.top) / r.height - 0.5;
@@ -84,7 +83,9 @@ export default function BillsStress() {
           anticipatePin: 1,
           invalidateOnRefresh: true,
           onUpdate: (self) => {
-            if (self.progress > 0.5 && !consolidated) setConsolidated(true);
+            const pastHalf = self.progress > 0.5;
+            mouseLiveRef.current = !pastHalf;
+            if (pastHalf && !consolidated) setConsolidated(true);
           },
         },
       });
