@@ -8,6 +8,7 @@ import { BILL_CARDS } from "@/lib/data";
 import { cn } from "@/lib/utils";
 
 export default function BillsStress() {
+  const sectionRef = useRef<HTMLElement>(null);
   const stageRef = useRef<HTMLDivElement>(null);
   const [consolidated, setConsolidated] = useState(false);
   const [compact, setCompact] = useState(false);
@@ -71,52 +72,54 @@ export default function BillsStress() {
       };
       window.addEventListener("mousemove", onMove, { passive: true });
 
-      /* ---- consolidation: bills arc into one payment, card pops ---- */
-      const fly = gsap.timeline({
-        paused: true,
-        delay: 1.25,
-        onStart: () => {
-          mouseLive = false;
-          setConsolidated(true);
+      /* ---- single scrubbed timeline: entrance → hold → consolidate ---- */
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top top",
+          end: () => `+=${window.innerHeight * 1.5}`,
+          scrub: 1,
+          pin: sectionRef.current,
+          anticipatePin: 1,
+          invalidateOnRefresh: true,
+          onUpdate: (self) => {
+            if (self.progress > 0.5 && !consolidated) setConsolidated(true);
+          },
         },
       });
-      fly.to(bills, {
+
+      /* Phase 1 — bills tumble in (0 → 0.4) */
+      tl.to(bills, {
+        autoAlpha: 1,
+        scale: 1,
+        rotate: (i, t) => rotDeg(t as HTMLElement),
+        y: 0,
+        duration: 0.4,
+        ease: "back.out(1.7)",
+        stagger: { each: 0.03, from: "random" },
+      }, 0);
+
+      /* Phase 2 — hold (0.4 → 0.55) */
+      tl.to({}, { duration: 0.15 });
+
+      /* Phase 3 — bills consolidate into card (0.55 → 0.85) */
+      tl.to(bills, {
         x: (i, t) => ((50 - parseFloat((t as HTMLElement).style.left)) / 100) * stage.offsetWidth * 0.92,
         y: (i, t) => ((50 - parseFloat((t as HTMLElement).style.top)) / 100) * stage.offsetHeight * 0.94,
         rotate: 0,
         scale: 0.24,
         autoAlpha: 0,
-        duration: 0.9,
+        duration: 0.3,
         ease: "power3.inOut",
         overwrite: "auto",
-        stagger: { each: 0.06, from: "edges" },
-      }, 0);
-      fly.to(card, { autoAlpha: 1, scale: 1, duration: 0.65, ease: "power3.out" }, 0.5);
-
-      /* ---- refined controlled settle after convergence (no elastic) ---- */
-      fly.to(card, {
-        scale: 1.015,
-        duration: 0.35,
-        ease: "power2.out",
-      }).to(card, {
-        scale: 1,
-        duration: 0.5,
-        ease: "power2.out",
+        stagger: { each: 0.02, from: "edges" },
       });
 
-      const enter = gsap.timeline({
-        scrollTrigger: { trigger: stage, start: "top 72%", once: true },
-        onComplete: () => fly.play(),
-      });
-      enter.to(bills, {
-        autoAlpha: 1,
-        scale: 1,
-        rotate: (i, t) => rotDeg(t as HTMLElement),
-        y: 0,
-        duration: 0.95,
-        ease: "back.out(1.7)",
-        stagger: { each: 0.065, from: "random" },
-      });
+      tl.to(card, { autoAlpha: 1, scale: 1, duration: 0.15, ease: "power3.out" }, "<+0.05");
+
+      /* settle pop */
+      tl.to(card, { scale: 1.015, duration: 0.08, ease: "power2.out" });
+      tl.to(card, { scale: 1, duration: 0.12, ease: "power2.out" });
 
       return () => {
         window.removeEventListener("mousemove", onMove);
@@ -127,12 +130,12 @@ export default function BillsStress() {
   }, []);
 
   return (
-    <section id="about" className="overflow-hidden bg-white pt-[58px] pb-16 lg:pt-[90px] lg:pb-20">
+    <section id="about" ref={sectionRef} className="overflow-hidden bg-white pt-[58px] pb-16 lg:pt-[90px] lg:pb-20">
       <div className="shell">
         <SectionHeading lead="More bills." accent="More stress." />
 
         {/* stage */}
-        <div ref={stageRef} className="relative mx-auto mt-8 h-[420px] max-w-[1100px] max-[519px]:h-[340px] lg:mt-12 lg:h-[470px]">
+        <div ref={stageRef} className="relative mx-auto mt-8 h-[420px] max-w-[1100px] max-[519px]:h-[340px] overflow-hidden lg:mt-12 lg:h-[470px]">
           {/* watermark */}
           <div
             aria-hidden
