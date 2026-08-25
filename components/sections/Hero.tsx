@@ -19,13 +19,13 @@ export default function Hero() {
             <Rise delay={0}>
               {/* Fast • Secure • Trusted rule */}
               <div className="flex items-center gap-[10px]">
-                <span aria-hidden className="h-[1px] w-[62px] bg-gradient-to-r from-brand-700/0 to-brand-700/45" />
-                <span aria-hidden className="h-[4px] w-[4px] rounded-full bg-brand-700" />
+                <span aria-hidden className="h-[1px] w-6 shrink-0 bg-gradient-to-r from-brand-700/0 to-brand-700/45 sm:w-[62px]" />
+                <span aria-hidden className="h-[4px] w-[4px] shrink-0 rounded-full bg-brand-700" />
                 <p className="text-[12.5px] font-bold tracking-[-0.005em] text-brand-700">
                   Fast • Secure • Trusted
                 </p>
-                <span aria-hidden className="h-[4px] w-[4px] rounded-full bg-brand-700/70" />
-                <span aria-hidden className="h-[1px] w-[86px] bg-gradient-to-r from-brand-700/45 to-brand-700/0" />
+                <span aria-hidden className="h-[4px] w-[4px] shrink-0 rounded-full bg-brand-700/70" />
+                <span aria-hidden className="h-[1px] w-8 shrink-0 bg-gradient-to-r from-brand-700/45 to-brand-700/0 sm:w-[86px]" />
               </div>
             </Rise>
 

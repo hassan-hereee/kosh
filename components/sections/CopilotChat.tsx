@@ -96,9 +96,9 @@ export default function CopilotChat() {
               value={draft}
               onChange={(e) => setDraft(e.target.value)}
               placeholder="Ask about rates, fees, your situation..."
-              className="h-[44px] flex-1 rounded-lg border border-slate-200 bg-white px-4 text-[12.5px] text-ink outline-none transition-colors placeholder:text-ink-400 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20"
+              className="h-[44px] min-w-0 flex-1 rounded-lg border border-slate-200 bg-white px-4 text-[12.5px] text-ink outline-none transition-colors placeholder:text-ink-400 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20"
             />
-            <button type="submit" className="btn-primary h-[40px] px-5 text-[13px]">
+            <button type="submit" className="btn-primary h-[40px] shrink-0 px-5 text-[13px]">
               Send
               <SendIcon className="h-[13px] w-[13px]" />
             </button>

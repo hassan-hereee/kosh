@@ -49,7 +49,7 @@ export default function Journey() {
                 <article
                   key={step.title}
                   data-stagger
-                  className="relative w-[300px] shrink-0 snap-start sm:w-auto lg:w-[360px]"
+                  className="relative w-full shrink-0 snap-start lg:w-[360px]"
                 >
                   <span className="tl-dot relative z-10 grid h-9 w-9 place-items-center rounded-full bg-gradient-to-b from-brand-500 to-brand-700 text-[13px] font-bold text-white shadow-pill">
                     {i + 1}

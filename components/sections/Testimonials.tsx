@@ -7,29 +7,49 @@ import { StarIcon } from "@/components/ui/icons";
 import { TESTIMONIALS, TESTIMONIAL_SUMMARY } from "@/lib/data";
 import { cn } from "@/lib/utils";
 
-const MAX_INDEX = TESTIMONIALS.length - 3; /* 3 cards visible at a time */
 const AUTOPLAY_MS = 5000;
 
 export default function Testimonials() {
   const [index, setIndex] = useState(0);
+  const [perView, setPerView] = useState(3);
   const [paused, setPaused] = useState(false);
   const [dragX, setDragX] = useState(0);
   const [dragging, setDragging] = useState(false);
   const drag = useRef({ startX: 0 });
   const viewport = useRef<HTMLDivElement>(null);
+  const maxIndex = Math.max(0, TESTIMONIALS.length - perView);
+
+  /* cards visible per view: 1 mobile / 2 sm / 3 lg — drives slide step + dots */
+  useEffect(() => {
+    const mqLg = window.matchMedia("(min-width: 1024px)");
+    const mqSm = window.matchMedia("(min-width: 640px)");
+    const apply = () => setPerView(mqLg.matches ? 3 : mqSm.matches ? 2 : 1);
+    apply();
+    mqLg.addEventListener("change", apply);
+    mqSm.addEventListener("change", apply);
+    return () => {
+      mqLg.removeEventListener("change", apply);
+      mqSm.removeEventListener("change", apply);
+    };
+  }, []);
+
+  /* keep index in range when the visible count changes across breakpoints */
+  useEffect(() => {
+    setIndex((i) => Math.min(i, maxIndex));
+  }, [maxIndex]);
 
   /* autoplay — pauses on hover/focus/drag */
   useEffect(() => {
     if (paused || dragging) return;
     const t = setInterval(
-      () => setIndex((i) => (i >= MAX_INDEX ? 0 : i + 1)),
+      () => setIndex((i) => (i >= maxIndex ? 0 : i + 1)),
       AUTOPLAY_MS,
     );
     return () => clearInterval(t);
-  }, [paused, dragging]);
+  }, [paused, dragging, maxIndex]);
 
   const go = (next: number) =>
-    setIndex(Math.max(0, Math.min(MAX_INDEX, next)));
+    setIndex(Math.max(0, Math.min(maxIndex, next)));
 
   const onPointerDown = (e: React.PointerEvent) => {
     if (e.pointerType === "mouse" && e.button !== 0) return;
@@ -95,7 +115,7 @@ export default function Testimonials() {
               !dragging && "transition-transform duration-500 ease-out",
               dragging && "cursor-grabbing",
             )}
-            style={{ transform: `translateX(calc(${-(index * 100) / 3}% + ${dragX}px))` }}
+            style={{ transform: `translateX(calc(${-(index * 100) / perView}% + ${dragX}px))` }}
           >
             {TESTIMONIALS.map((t, i) => (
               <figure key={t.name} className="w-full shrink-0 px-[10px] sm:w-1/2 lg:w-1/3">
@@ -121,7 +141,7 @@ export default function Testimonials() {
 
         {/* dots */}
         <div className="mt-9 flex justify-center gap-[7px]">
-          {Array.from({ length: MAX_INDEX + 1 }).map((_, i) => (
+          {Array.from({ length: maxIndex + 1 }).map((_, i) => (
             <button
               key={i}
               type="button"

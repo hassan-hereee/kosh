@@ -10,6 +10,17 @@ import { cn } from "@/lib/utils";
 export default function BillsStress() {
   const stageRef = useRef<HTMLDivElement>(null);
   const [consolidated, setConsolidated] = useState(false);
+  const [compact, setCompact] = useState(false);
+
+  /* Scatter % positions are tuned for the desktop stage; on narrow phones they
+     push bills past the viewport edge, so compress the spread toward centre. */
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 479px)");
+    const apply = () => setCompact(mq.matches);
+    apply();
+    mq.addEventListener("change", apply);
+    return () => mq.removeEventListener("change", apply);
+  }, []);
 
   useEffect(() => {
     const stage = stageRef.current;
@@ -119,7 +130,7 @@ export default function BillsStress() {
         <SectionHeading lead="More bills." accent="More stress." />
 
         {/* stage */}
-        <div ref={stageRef} className="relative mx-auto mt-8 h-[420px] max-w-[1100px] lg:mt-12 lg:h-[470px]">
+        <div ref={stageRef} className="relative mx-auto mt-8 h-[340px] max-w-[1100px] sm:h-[420px] lg:mt-12 lg:h-[470px]">
           {/* watermark */}
           <div
             aria-hidden
@@ -144,8 +155,11 @@ export default function BillsStress() {
               data-bill
               data-rotate={bill.rotate}
               aria-hidden={consolidated}
-              className="absolute w-[150px] will-change-transform sm:w-[164px]"
-              style={{ left: `${bill.x}%`, top: `${bill.y}%` }}
+              className="absolute w-[128px] will-change-transform sm:w-[164px]"
+              style={{
+                left: `${compact ? 6 + bill.x * 0.82 : bill.x}%`,
+                top: `${compact ? 2 + bill.y * 0.9 : bill.y}%`,
+              }}
             >
               <div
                 className={cn(

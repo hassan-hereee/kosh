@@ -10,12 +10,12 @@ export default function LenderBand() {
   return (
     <section className="bg-band py-[30px] lg:h-[152px] lg:py-0 relative overflow-hidden">
       <div className="flex h-full flex-col justify-center relative z-10">
-        <div className="flex items-center gap-6 overflow-hidden">
-          <p className="shrink-0 pl-6 text-[17px] font-medium tracking-[-0.015em] text-white lg:pl-[120px]">
+        <div className="flex flex-col items-center gap-4 overflow-hidden lg:flex-row lg:items-center lg:gap-6">
+          <p className="shrink-0 text-center text-[17px] font-medium tracking-[-0.015em] text-white lg:pl-[120px]">
             Lenders on our marketplace
           </p>
 
-          <div className="mask-fade-x relative flex-1 overflow-hidden">
+          <div className="mask-fade-x relative w-full overflow-hidden lg:flex-1">
             <VelocityMarquee baseDuration={26}>
               {track.map((name, i) => (
                 <span
