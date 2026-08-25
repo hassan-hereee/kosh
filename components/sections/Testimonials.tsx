@@ -94,8 +94,6 @@ export default function Testimonials() {
         <MaskReveal wipe="left" zoom={1.03} className="mt-12">
           <div
             ref={viewport}
-            data-cursor="drag"
-            data-cursor-label="Drag"
             className="touch-pan-y overflow-hidden"
             onPointerDown={onPointerDown}
             onPointerMove={onPointerMove}
