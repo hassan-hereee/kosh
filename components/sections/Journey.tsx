@@ -66,7 +66,7 @@ export default function Journey() {
 
         <Stagger
           step={130}
-          className="mt-12 max-lg:snap-x max-lg:overflow-x-auto max-lg:no-scrollbar lg:mt-16"
+          className="mt-12 lg:mt-16"
         >
           <div
             ref={trackRef}

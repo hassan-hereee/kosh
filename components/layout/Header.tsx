@@ -128,10 +128,6 @@ export default function Header() {
               href={PHONE.href}
               className="hidden items-center gap-[7px] text-[13.5px] font-medium text-ink transition-colors hover:text-brand-500 md:flex"
             >
-              <span className="relative flex h-[7px] w-[7px]" aria-hidden>
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-brand-500/70" />
-                <span className="relative inline-flex h-[7px] w-[7px] rounded-full bg-brand-500" />
-              </span>
               <PhoneIcon className="h-[15px] w-[15px] text-brand-700" />
               {PHONE.display}
             </a>

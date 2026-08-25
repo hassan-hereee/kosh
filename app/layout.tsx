@@ -3,7 +3,6 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageIntro from "@/components/ui/PageIntro";
-import CursorTracker from "@/components/ui/CursorTracker";
 import "./globals.css";
 
 const jakarta = Plus_Jakarta_Sans({
@@ -32,7 +31,6 @@ export default function RootLayout({
     <html lang="en" className={jakarta.variable}>
       <body>
         <PageIntro />
-        <CursorTracker />
         <Header />
         <main>{children}</main>
         <Footer />

@@ -8,9 +8,15 @@
 
 @layer base {
   html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+  }
+
+  html::-webkit-scrollbar {
+    display: none;
   }
 
   body {
@@ -94,17 +100,6 @@
 }
 
 @layer utilities {
-  /* Custom cursor active — native cursor hidden while CursorTracker runs */
-  html.pp-cursor-active,
-  html.pp-cursor-active * {
-    cursor: none !important;
-  }
-
-  html.pp-cursor-active input:not([type="range"]),
-  html.pp-cursor-active textarea {
-    cursor: text !important;
-  }
-
   /* Stagger system ---------------------------------------------------------
      Container gets .stagger-in when it scrolls into view (see ui/Stagger.tsx).
      Any descendant marked [data-stagger] fades + lifts in with an incremental
