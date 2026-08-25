@@ -54,14 +54,20 @@ export default function Header() {
   }, [open]);
 
   return (
-    <header className="absolute inset-x-0 top-0 z-50 pt-[26px]">
+    <header className="fixed inset-x-0 top-0 z-50 pt-[26px] motion-safe:animate-[header-in_0.7s_cubic-bezier(0.22,0.61,0.36,1)_both]">
       <div className="shell">
+        <div className="relative">
+          {/* pulsing blue glow aura */}
+          <div
+            aria-hidden
+            className="pointer-events-none absolute -inset-3 -z-10 rounded-full bg-white/50 blur-2xl motion-safe:animate-[pulse-glow_4s_ease-in-out_infinite]"
+          />
           <nav
             className={cn(
-              "flex h-[62px] items-center justify-between rounded-full pl-5 pr-[6px] backdrop-blur-md transition-all duration-300",
+              "relative flex h-[62px] items-center justify-between rounded-full pl-5 pr-[6px] backdrop-blur-xl backdrop-saturate-150 transition-all duration-500 hover:scale-[1.015]",
               scrolled
-                ? "border border-white/70 bg-white/90 shadow-[0_10px_30px_rgba(15,26,46,0.12)]"
-                : "border border-transparent bg-white/85 shadow-[0_2px_10px_rgba(15,26,46,0.05)]",
+                ? "scale-100 bg-white/75 shadow-[0_12px_34px_rgba(15,26,46,0.14)]"
+                : "scale-[0.96] bg-white/60 shadow-[0_2px_12px_rgba(15,26,46,0.06)]",
             )}
           >
           <Link href="/" aria-label="PriorityPlus Financial — home">
@@ -121,8 +127,9 @@ export default function Header() {
               {open ? <CloseIcon className="h-6 w-6" /> : <MenuIcon className="h-6 w-6" />}
             </button>
           </div>
-        </nav>
-      </div>
+          </nav>
+        </div>
+       </div>
 
       {/* Mobile drawer */}
       <div
