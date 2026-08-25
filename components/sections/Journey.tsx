@@ -12,7 +12,7 @@ export default function Journey() {
   const lineRef = useRef<HTMLDivElement>(null);
 
   return (
-    <section className="bg-white relative overflow-hidden">
+    <section className="bg-white relative overflow-hidden max-[519px]:pt-[40px]">
       <HorizontalPin
         trackRef={trackRef}
         lineRef={lineRef}

@@ -12,10 +12,10 @@ export default function BillsStress() {
   const [consolidated, setConsolidated] = useState(false);
   const [compact, setCompact] = useState(false);
 
-  /* Scatter % positions are tuned for the desktop stage; on narrow phones they
-     push bills past the viewport edge, so compress the spread toward centre. */
+  /* Scatter % positions are tuned for the desktop stage; on narrow phones a
+     dedicated spread keeps clear gaps between cards while they scale down. */
   useEffect(() => {
-    const mq = window.matchMedia("(max-width: 479px)");
+    const mq = window.matchMedia("(max-width: 519px)");
     const apply = () => setCompact(mq.matches);
     apply();
     mq.addEventListener("change", apply);
@@ -30,6 +30,8 @@ export default function BillsStress() {
       stage.querySelectorAll<HTMLElement>("[data-bill]").forEach((b) => {
         b.style.visibility = "hidden";
       });
+      const card = stage.querySelector<HTMLElement>("[data-consol]");
+      if (card) gsap.set(card, { autoAlpha: 1, scale: 1, xPercent: -50, yPercent: -50 });
       setConsolidated(true);
       return;
     }
@@ -130,7 +132,7 @@ export default function BillsStress() {
         <SectionHeading lead="More bills." accent="More stress." />
 
         {/* stage */}
-        <div ref={stageRef} className="relative mx-auto mt-8 h-[340px] max-w-[1100px] sm:h-[420px] lg:mt-12 lg:h-[470px]">
+        <div ref={stageRef} className="relative mx-auto mt-8 h-[420px] max-w-[1100px] max-[519px]:h-[340px] lg:mt-12 lg:h-[470px]">
           {/* watermark */}
           <div
             aria-hidden
@@ -155,32 +157,32 @@ export default function BillsStress() {
               data-bill
               data-rotate={bill.rotate}
               aria-hidden={consolidated}
-              className="absolute w-[128px] will-change-transform sm:w-[164px]"
+              className="absolute w-[175px] will-change-transform max-[519px]:w-[clamp(108px,32vw,130px)] sm:w-[190px]"
               style={{
-                left: `${compact ? 6 + bill.x * 0.82 : bill.x}%`,
-                top: `${compact ? 2 + bill.y * 0.9 : bill.y}%`,
+                left: `${compact ? bill.m.x : bill.x}%`,
+                top: `${compact ? bill.m.y : bill.y}%`,
               }}
             >
               <div
                 className={cn(
-                  "rounded-xl border border-slate-200/80 bg-white p-4 shadow-tilt",
+                  "rounded-xl border border-slate-200/80 bg-white px-6 py-5 shadow-tilt max-[519px]:px-4 max-[519px]:py-3.5",
                   !consolidated && "animate-floatY",
                 )}
                 style={{ animationDelay: `${bill.delay}s` }}
               >
-                <p className="text-[10.5px] font-medium text-ink-400">{bill.label}</p>
+                <p className="text-[11.5px] font-medium text-ink-400">{bill.label}</p>
                 <p
                   className={cn(
-                    "mt-[5px] text-[19px] font-bold leading-none tracking-[-0.02em]",
+                    "mt-[5px] text-[21px] font-bold leading-none tracking-[-0.02em]",
                     bill.tone === "danger" ? "text-danger" : "text-ink",
                   )}
                 >
                   {bill.value}
                   {"unit" in bill && bill.unit ? (
-                    <span className="text-[12px] font-semibold text-ink-400">{bill.unit}</span>
+                    <span className="text-[13px] font-semibold text-ink-400">{bill.unit}</span>
                   ) : null}
                 </p>
-                <p className="mt-[6px] text-[10.5px] font-medium text-ink-400">{bill.sub}</p>
+                <p className="mt-[6px] text-[11.5px] font-medium text-ink-400">{bill.sub}</p>
               </div>
             </div>
           ))}
@@ -189,7 +191,7 @@ export default function BillsStress() {
           <div
             data-consol
             aria-hidden={!consolidated}
-            className="absolute left-1/2 top-1/2 w-[300px] will-change-transform"
+            className="absolute left-1/2 top-1/2 w-[min(300px,calc(100%-20px))] will-change-transform"
           >
             <div className="bg-panel-navy no-grid rounded-2xl px-7 py-8 text-center shadow-panel">
               <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-brand-300">
