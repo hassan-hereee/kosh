@@ -13,6 +13,8 @@
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    max-width: 100%;
   }
 
   html::-webkit-scrollbar {
@@ -21,6 +23,8 @@
 
   body {
     @apply bg-white font-sans text-ink antialiased;
+    overflow-x: hidden;
+    max-width: 100%;
   }
 
   /* The design uses a square full-stop / square i-dot (Plus Jakarta Sans). */

@@ -12,6 +12,7 @@ export default function BillsStress() {
   const stageRef = useRef<HTMLDivElement>(null);
   const [consolidated, setConsolidated] = useState(false);
   const [compact, setCompact] = useState(false);
+  const mouseLiveRef = useRef(true);
 
   /* Scatter % positions are tuned for the desktop stage; on narrow phones a
      dedicated spread keeps clear gaps between cards while they scale down. */
