@@ -114,12 +114,12 @@ export default function BillsStress() {
   }, []);
 
   return (
-    <section id="about" className="overflow-hidden bg-white pt-[58px] pb-[10px] lg:pt-[90px] lg:pb-[10px]">
+    <section id="about" className="overflow-hidden bg-white pt-[58px] pb-16 lg:pt-[90px] lg:pb-20">
       <div className="shell">
         <SectionHeading lead="More bills." accent="More stress." />
 
         {/* stage */}
-        <div ref={stageRef} className="relative mx-auto mt-4 h-[420px] max-w-[1100px] lg:h-[470px]">
+        <div ref={stageRef} className="relative mx-auto mt-8 h-[420px] max-w-[1100px] lg:mt-12 lg:h-[470px]">
           {/* watermark */}
           <div
             aria-hidden
