@@ -10,6 +10,7 @@ import { HERO_STATS } from "@/lib/data";
 export default function Hero() {
   return (
     <section
+      id="home"
       className="relative overflow-hidden bg-hero pt-[120px] lg:pb-[40px] lg:pt-[128px]"
     >
       <div className="shell relative lg:h-full">

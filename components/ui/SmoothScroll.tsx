@@ -17,6 +17,9 @@ export default function SmoothScroll({ children }: { children: React.ReactNode }
       infinite: false,
     });
 
+    // Expose Lenis globally for navigation
+    (window as unknown as { lenis: Lenis }).lenis = lenis;
+
     lenis.on("scroll", ScrollTrigger.update);
 
     gsap.ticker.add((time: number) => {
@@ -27,6 +30,7 @@ export default function SmoothScroll({ children }: { children: React.ReactNode }
 
     return () => {
       lenis.destroy();
+      delete (window as unknown as { lenis?: Lenis }).lenis;
       gsap.ticker.remove(lenis.raf as unknown as gsap.TickerCallback);
     };
   }, []);
