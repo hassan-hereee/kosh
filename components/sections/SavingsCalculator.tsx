@@ -88,7 +88,7 @@ export default function SavingsCalculator() {
             </div>
 
             {/* apr slider */}
-            <div className="mt-14 flex items-baseline justify-between">
+            <div className="mt-10 sm:mt-14 flex items-baseline justify-between">
               <label htmlFor="calc-apr" className="text-[14px] font-bold text-ink">
                 Your current average APR
               </label>

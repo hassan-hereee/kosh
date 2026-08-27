@@ -11,17 +11,19 @@ export default function Journey() {
   const sectionRef = useRef<HTMLElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
   const lineRef = useRef<HTMLDivElement>(null);
+  const viewportRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const section = sectionRef.current;
     const track = trackRef.current;
     const line = lineRef.current;
-    if (!section || !track || reducedMotion()) return;
+    const viewport = viewportRef.current;
+    if (!section || !track || !viewport || reducedMotion()) return;
 
     const ctx = gsap.context(() => {
       const mm = gsap.matchMedia();
 
-      /* Desktop: pin the section and scroll the track sideways as you scroll. */
+      /* Desktop: pin the section and scroll the track sideways. */
       mm.add("(min-width: 1024px)", () => {
         const distance = () =>
           Math.max(track.scrollWidth - section.offsetWidth, 0);
@@ -49,6 +51,31 @@ export default function Journey() {
           tl.fromTo(line, { scaleX: 0 }, { scaleX: 1, ease: "none" }, 0);
         }
       });
+
+      /* Mobile: pin the section and scroll the track vertically. */
+      mm.add("(max-width: 1023px)", () => {
+        const distance = () => Math.max(track.scrollHeight - viewport.offsetHeight, 0);
+
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: section,
+            start: "top top",
+            end: () => `+=${distance()}`,
+            scrub: 1,
+            pin: section,
+            anticipatePin: 1,
+            invalidateOnRefresh: true,
+            onUpdate: (self) => {
+              const active = Math.round(self.progress * (JOURNEY_STEPS.length - 1));
+              track.querySelectorAll(".tl-dot").forEach((d, i) => {
+                d.classList.toggle("is-active", i === active && self.progress > 0.02);
+              });
+            },
+          },
+        });
+
+        tl.to(track, { y: () => -distance(), ease: "none" }, 0);
+      });
     }, section);
 
     return () => ctx.revert();
@@ -57,22 +84,23 @@ export default function Journey() {
   return (
     <section
       ref={sectionRef}
-      className="bg-white relative max-[519px]:pt-[40px]"
+      className="bg-white relative"
     >
-      <div className="flex min-h-[560px] flex-col justify-center py-0 lg:h-screen lg:min-h-0 lg:py-0">
-        <div className="shell relative z-10">
-          <SectionHeading lead="From Your First Call to" accent="Financial Freedom" breakAfterLead />
-        </div>
+      <div className="shell relative z-10 pt-10 pb-4 lg:pt-0 lg:pb-0">
+        <SectionHeading lead="From Your First Call to" accent="Financial Freedom" breakAfterLead />
+      </div>
 
-        <Stagger
-          step={130}
-          className="mt-12 lg:mt-16"
-        >
+      {/* Track viewport — clips on mobile, unconstrained on desktop */}
+      <div
+        ref={viewportRef}
+        className="relative mx-auto mt-4 h-[55dvh] min-h-[280px] max-w-[1100px] overflow-hidden px-6 lg:mx-0 lg:mt-12 lg:h-auto lg:min-h-0 lg:max-w-none lg:overflow-visible lg:px-0"
+      >
+        <Stagger step={130}>
           <div
             ref={trackRef}
-            className="relative grid w-full gap-10 px-6 sm:grid-cols-2 lg:flex lg:w-max lg:gap-[72px] lg:pl-[max(24px,calc((100vw-1200px)/2))] lg:pr-[max(48px,calc((100vw-1200px)/2))]"
+            className="relative grid w-full gap-7 px-6 sm:grid-cols-2 sm:gap-10 lg:flex lg:w-max lg:gap-[72px] lg:pl-[max(24px,calc((100vw-1200px)/2))] lg:pr-[max(48px,calc((100vw-1200px)/2))]"
           >
-            {/* progress rail — draws across the whole scroll range (desktop) */}
+            {/* progress rail — desktop only */}
             <div
               aria-hidden
               className="absolute left-0 top-[17px] hidden h-[2px] w-full bg-brand-100 lg:block"
@@ -103,20 +131,19 @@ export default function Journey() {
             ))}
           </div>
         </Stagger>
+      </div>
 
-        {/* warning note — stays inside the pinned viewport */}
-        <div className="shell mt-14">
-          <SlideIn
-            direction="up"
-            delay={150}
-            className="mx-auto max-w-[1080px] rounded-xl border border-red-100 bg-[#FEF4F2] px-7 py-5"
-          >
-            <p className="text-[12.5px] font-bold text-[#B42318]">{JOURNEY_NOTE.title}</p>
-            <p className="mt-[6px] text-[13px] leading-[1.65] text-ink-500">
-              {JOURNEY_NOTE.body}
-            </p>
-          </SlideIn>
-        </div>
+      <div className="shell mt-8 sm:mt-14">
+        <SlideIn
+          direction="up"
+          delay={150}
+          className="mx-auto max-w-[1080px] rounded-xl border border-red-100 bg-[#FEF4F2] px-7 py-5"
+        >
+          <p className="text-[12.5px] font-bold text-[#B42318]">{JOURNEY_NOTE.title}</p>
+          <p className="mt-[6px] text-[13px] leading-[1.65] text-ink-500">
+            {JOURNEY_NOTE.body}
+          </p>
+        </SlideIn>
       </div>
     </section>
   );

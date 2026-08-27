@@ -39,7 +39,7 @@ export default function QuoteWizard() {
   return (
     <div
       id="quote"
-      className="w-full h-[520px] flex flex-col rounded-[22px] border border-white/70 bg-surface-muted/95 px-[30px] pt-[30px] pb-[40px] shadow-[0_30px_70px_-24px_rgba(15,26,46,0.25),0_4px_14px_-6px_rgba(15,26,46,0.08)] backdrop-blur-sm sm:px-[36px] sm:pt-[36px] sm:pb-[48px]"
+      className="w-full h-[480px] sm:h-[520px] flex flex-col rounded-[22px] border border-white/70 bg-surface-muted/95 px-5 pt-6 pb-8 shadow-[0_30px_70px_-24px_rgba(15,26,46,0.25),0_4px_14px_-6px_rgba(15,26,46,0.08)] backdrop-blur-sm sm:px-[36px] sm:pt-[36px] sm:pb-[48px]"
     >
       {/* header + progress */}
       <div className="flex items-baseline justify-between">

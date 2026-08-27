@@ -53,26 +53,7 @@ export default function BillsStress() {
       });
       gsap.set(card, { autoAlpha: 0, scale: 0.75, xPercent: -50, yPercent: -50 });
 
-      /* ---- mouse depth: each bill drifts with the cursor at its own depth ---- */
-      const setters = bills.map((b, i) => ({
-        x: gsap.quickTo(b, "x", { duration: 0.75, ease: "power3" }),
-        y: gsap.quickTo(b, "y", { duration: 0.75, ease: "power3" }),
-        d: 7 + ((i * 37) % 12), // 7–18px pseudo-depth, stable per bill
-      }));
-
-      const onMove = (e: MouseEvent) => {
-        if (!mouseLiveRef.current) return;
-        const r = stage.getBoundingClientRect();
-        const nx = (e.clientX - r.left) / r.width - 0.5;
-        const ny = (e.clientY - r.top) / r.height - 0.5;
-        setters.forEach((s) => {
-          s.x(nx * s.d);
-          s.y(ny * s.d);
-        });
-      };
-      window.addEventListener("mousemove", onMove, { passive: true });
-
-      /* ---- single scrubbed timeline: entrance → hold → consolidate ---- */
+      /* ---- pinned scrubbed timeline — all viewports ---- */
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: sectionRef.current,
@@ -123,9 +104,28 @@ export default function BillsStress() {
       tl.to(card, { scale: 1.015, duration: 0.08, ease: "power2.out" });
       tl.to(card, { scale: 1, duration: 0.12, ease: "power2.out" });
 
-      return () => {
-        window.removeEventListener("mousemove", onMove);
-      };
+      /* ---- mouse depth: desktop/tablet only ---- */
+      const mm = gsap.matchMedia();
+      mm.add("(min-width: 640px)", () => {
+        const setters = bills.map((b, i) => ({
+          x: gsap.quickTo(b, "x", { duration: 0.75, ease: "power3" }),
+          y: gsap.quickTo(b, "y", { duration: 0.75, ease: "power3" }),
+          d: 7 + ((i * 37) % 12),
+        }));
+
+        const onMove = (e: MouseEvent) => {
+          if (!mouseLiveRef.current) return;
+          const r = stage.getBoundingClientRect();
+          const nx = (e.clientX - r.left) / r.width - 0.5;
+          const ny = (e.clientY - r.top) / r.height - 0.5;
+          setters.forEach((s) => {
+            s.x(nx * s.d);
+            s.y(ny * s.d);
+          });
+        };
+        window.addEventListener("mousemove", onMove, { passive: true });
+        return () => window.removeEventListener("mousemove", onMove);
+      });
     }, stage);
 
     return () => ctx.revert();
