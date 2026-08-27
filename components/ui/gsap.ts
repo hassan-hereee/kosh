@@ -6,7 +6,6 @@ import { useGSAP } from "@gsap/react";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger, useGSAP);
-  gsap.defaults({ ease: "cubic-bezier(.22,.61,.36,1)", duration: 0.8 });
 }
 
 export const reducedMotion = () =>
