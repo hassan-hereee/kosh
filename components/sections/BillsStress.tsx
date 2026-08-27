@@ -76,11 +76,10 @@ export default function BillsStress() {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: section,
-          start: "top top",
-          end: "+=150%",
-          scrub: 1.5,
+          start: "top 80px",
+          end: "+=100%",
+          scrub: 0.8,
           pin: section,
-          anticipatePin: 1,
           invalidateOnRefresh: true,
           onUpdate: (self) => {
             const pastHalf = self.progress > 0.5;
