@@ -6,7 +6,7 @@ import LoanOffers from "@/components/sections/LoanOffers";
 import ThreeSteps from "@/components/sections/ThreeSteps";
 import Journey from "@/components/sections/Journey";
 import CopilotChat from "@/components/sections/CopilotChat";
-import Testimonials from "@/components/sections/Testimonials";
+import Testimonials from "@/components/sections/TestimonialsNew";
 import Consultants from "@/components/sections/Consultants";
 import CtaBand from "@/components/sections/CtaBand";
 

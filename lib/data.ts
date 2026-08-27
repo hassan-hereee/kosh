@@ -184,6 +184,8 @@ export const TESTIMONIALS = [
     headline: "Made the process effortless",
     quote:
       "From start to finish, the team was professional and transparent consolidating my cards into one payment took the stress out of my month.",
+    avatarInitials: "RN",
+    avatarColor: "bg-brand-500",
   },
   {
     name: "Maccy Doe",
@@ -191,6 +193,8 @@ export const TESTIMONIALS = [
     headline: "Saved me thousands in interest",
     quote:
       "I was drowning in minimum payments. PriorityPlus walked me through my options, and I walked away with a clear payoff plan.",
+    avatarInitials: "MD",
+    avatarColor: "bg-emerald-500",
   },
   {
     name: "Jason L.",
@@ -198,6 +202,8 @@ export const TESTIMONIALS = [
     headline: "Quick, simple, no pressure",
     quote:
       "The online process took a few minutes and they answered every question I had.",
+    avatarInitials: "JL",
+    avatarColor: "bg-amber-500",
   },
   {
     name: "Kian Hooshmand",
@@ -205,6 +211,8 @@ export const TESTIMONIALS = [
     headline: "Real progress at last",
     quote:
       "Before finding PriorityPlus, my monthly debt felt completely unmanageable. Their team walked me through the entire consolidation process and combined everything into one single payment.",
+    avatarInitials: "KH",
+    avatarColor: "bg-violet-500",
   },
   {
     name: "Anthony R.",
@@ -212,6 +220,8 @@ export const TESTIMONIALS = [
     headline: "A clear payoff date",
     quote:
       "I had four different interest rates climbing every month and no real plan to pay them off. PriorityPlus laid out clear loan options in minutes, cutting my monthly bill by $350.",
+    avatarInitials: "AR",
+    avatarColor: "bg-rose-500",
   },
   {
     name: "Rachel V.",
@@ -219,6 +229,67 @@ export const TESTIMONIALS = [
     headline: "Shockingly fast and straightforward",
     quote:
       "I was skeptical because so many online offers come with hidden fees. Their website let me see exactly what I qualified for before committing to anything.",
+    avatarInitials: "RV",
+    avatarColor: "bg-cyan-500",
+  },
+] as const;
+
+export const TESTIMONIALS_V2 = [
+  {
+    name: "Kian Hooshmand",
+    quote:
+      "Before finding PriorityPlus, my monthly debt felt completely unmanageable. Their team walked me through the entire consolidation process and combined everything into one single payment. I finally have a clear path forward.",
+    avatarInitials: "KH",
+    avatarColor: "bg-violet-500",
+  },
+  {
+    name: "Rachel V.",
+    quote:
+      "What impressed me most was how fast and straightforward the entire application was. No hidden fees, no pressure — just clear options and a team that actually listens.",
+    avatarInitials: "RV",
+    avatarColor: "bg-cyan-500",
+  },
+  {
+    name: "Marcus T.",
+    quote:
+      "I spent months trying to figure out how to handle my rising bills. PriorityPlus showed me options I didn't know existed. My monthly payment dropped by almost $400.",
+    avatarInitials: "MT",
+    avatarColor: "bg-indigo-500",
+  },
+  {
+    name: "Robert N.",
+    quote:
+      "PriorityPlus turned high-interest debt into one clear, manageable monthly payment! The process was transparent from start to finish, and I never felt pressured.",
+    avatarInitials: "RN",
+    avatarColor: "bg-brand-500",
+  },
+  {
+    name: "Rachel V.",
+    quote:
+      "I was skeptical because so many online offers come with hidden fees. Their website let me see exactly what I qualified for before committing to anything. Best decision I made this year.",
+    avatarInitials: "RV",
+    avatarColor: "bg-cyan-500",
+  },
+  {
+    name: "Anthony R.",
+    quote:
+      "I had four different interest rates climbing every month and no real plan to pay them off. PriorityPlus laid out clear loan options in minutes, cutting my monthly bill by $350.",
+    avatarInitials: "AR",
+    avatarColor: "bg-rose-500",
+  },
+  {
+    name: "Sarah M.",
+    quote:
+      "The team made everything so easy to understand. I went from dreading my monthly bills to having a single payment I can actually manage. Highly recommend.",
+    avatarInitials: "SM",
+    avatarColor: "bg-pink-500",
+  },
+  {
+    name: "David K.",
+    quote:
+      "Saved me thousands in interest and gave me a clear payoff date. The whole process took less than 20 minutes online. Why didn't I do this sooner?",
+    avatarInitials: "DK",
+    avatarColor: "bg-orange-500",
   },
 ] as const;
 

@@ -1,3 +1,10 @@
+// ═══════════════════════════════════════════════════════════════════════════════
+// LEGACY TESTIMONIALS — Preserved for rollback.
+// Replaced by TestimonialsNew.tsx (masonry layout).
+// To restore: rename TestimonialsLegacy back to Testimonials, delete
+// TestimonialsNew.tsx, and revert page.tsx import to use Testimonials.
+// ═══════════════════════════════════════════════════════════════════════════════
+
 "use client";
 
 import { useEffect, useRef, useState } from "react";
@@ -9,7 +16,7 @@ import { cn } from "@/lib/utils";
 
 const AUTOPLAY_MS = 5000;
 
-export default function Testimonials() {
+export default function TestimonialsLegacy() {
   const [index, setIndex] = useState(0);
   const [perView, setPerView] = useState(3);
   const [paused, setPaused] = useState(false);
