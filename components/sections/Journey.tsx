@@ -20,22 +20,22 @@ export default function Journey() {
     const viewport = viewportRef.current;
     if (!section || !track || !viewport || reducedMotion()) return;
 
+    // Measure distances BEFORE ScrollTrigger creates pin spacer
+    const desktopDistance = Math.max(track.scrollWidth - section.offsetWidth, 0);
+    const mobileDistance = Math.max(track.scrollHeight - viewport.offsetHeight, 0);
+
     const ctx = gsap.context(() => {
       const mm = gsap.matchMedia();
 
       /* Desktop: pin the section and scroll the track sideways as you scroll. */
       mm.add("(min-width: 1024px)", () => {
-        const distance = () =>
-          Math.max(track.scrollWidth - section.offsetWidth, 0);
-
         const tl = gsap.timeline({
           scrollTrigger: {
             trigger: section,
-            start: "top top",
-            end: () => `+=${distance() * 2}`,
-            scrub: 1.5,
+            start: "top 80px",
+            end: () => `+=${desktopDistance * 1.2}`,
+            scrub: 0.8,
             pin: section,
-            anticipatePin: 1,
             invalidateOnRefresh: true,
             onUpdate: (self) => {
               const active = Math.round(self.progress * (JOURNEY_STEPS.length - 1));
@@ -46,7 +46,7 @@ export default function Journey() {
           },
         });
 
-        tl.to(track, { x: () => -distance(), ease: "none" }, 0);
+        tl.to(track, { x: -desktopDistance, ease: "none" }, 0);
         if (line) {
           tl.fromTo(line, { scaleX: 0 }, { scaleX: 1, ease: "none" }, 0);
         }
@@ -54,16 +54,13 @@ export default function Journey() {
 
       /* Mobile: pin the section and scroll the track vertically as you scroll. */
       mm.add("(max-width: 1023px)", () => {
-        const distance = () => Math.max(track.scrollHeight - viewport.offsetHeight, 0);
-
         const tl = gsap.timeline({
           scrollTrigger: {
             trigger: section,
-            start: "top top",
-            end: () => `+=${distance() * 2.5}`,
-            scrub: 1.5,
+            start: "top 80px",
+            end: () => `+=${mobileDistance * 1.5}`,
+            scrub: 0.8,
             pin: section,
-            anticipatePin: 1,
             invalidateOnRefresh: true,
             onUpdate: (self) => {
               const active = Math.round(self.progress * (JOURNEY_STEPS.length - 1));
@@ -74,7 +71,7 @@ export default function Journey() {
           },
         });
 
-        tl.to(track, { y: () => -distance(), ease: "none" }, 0);
+        tl.to(track, { y: -mobileDistance, ease: "none" }, 0);
       });
     }, section);
 
