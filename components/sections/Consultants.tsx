@@ -14,7 +14,7 @@ export default function Consultants() {
   const [slot, setSlot] = useState<string | null>(null);
 
   return (
-    <section className="bg-[linear-gradient(180deg,#FFFFFF_0%,#F3F7FC_100%)] pt-20 pb-16 lg:pt-20 lg:pb-20 relative overflow-hidden">
+    <section className="bg-[linear-gradient(180deg,#FFFFFF_0%,#F3F7FC_100%)] pt-12 sm:pt-20 pb-16 lg:pt-20 lg:pb-20 relative overflow-hidden">
       <div className="shell relative z-10">
         <SectionHeading lead="10 Minutes That Could" accent="Change Your Finances." />
 

@@ -34,7 +34,7 @@ export default function CopilotChat() {
   };
 
   return (
-    <section id="faqs" className="bg-soft-sky pt-0 pb-16 lg:pt-0 lg:pb-20 relative overflow-hidden">
+    <section id="faqs" className="bg-soft-sky pt-10 sm:pt-0 pb-16 lg:pt-0 lg:pb-20 relative overflow-hidden">
       <div className="shell relative z-10">
         <SectionHeading
           lead="Get Clarity Before"
