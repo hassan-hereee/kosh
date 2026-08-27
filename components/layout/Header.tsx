@@ -18,16 +18,12 @@ export default function Header() {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState("Home");
   const [scrolled, setScrolled] = useState(false);
-  const [progress, setProgress] = useState(0);
   const drawerRef = useRef<HTMLDivElement>(null);
   const menuTlRef = useRef<gsap.core.Timeline | null>(null);
 
   useEffect(() => {
     const onScroll = () => {
       setScrolled(window.scrollY > 8);
-      const el = document.documentElement;
-      const max = el.scrollHeight - el.clientHeight;
-      setProgress(max > 0 ? Math.min(1, window.scrollY / max) : 0);
     };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -143,14 +139,6 @@ export default function Header() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 pt-[26px] motion-safe:animate-[header-in_0.7s_cubic-bezier(0.22,0.61,0.36,1)_both]">
-      {/* scroll progress — desktop only */}
-      <div className="absolute inset-x-0 top-0 z-[60] hidden h-[3px] bg-transparent lg:block">
-        <div
-          className="h-full origin-left bg-brand-500 transition-[width] duration-100 ease-out"
-          style={{ width: `${progress * 100}%` }}
-        />
-      </div>
-
       <div className="shell">
         <div className="relative">
           {/* pulsing blue glow aura — desktop only */}
