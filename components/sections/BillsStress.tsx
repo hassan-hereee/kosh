@@ -10,9 +10,9 @@ import { cn } from "@/lib/utils";
 export default function BillsStress() {
   const sectionRef = useRef<HTMLElement>(null);
   const stageRef = useRef<HTMLDivElement>(null);
-  const [consolidated, setConsolidated] = useState(false);
   const [compact, setCompact] = useState(false);
   const mouseLiveRef = useRef(true);
+  const consolidatedRef = useRef(false);
 
   /* Scatter % positions are tuned for the desktop stage; on narrow phones a
      dedicated spread keeps clear gaps between cards while they scale down. */
@@ -25,8 +25,9 @@ export default function BillsStress() {
   }, []);
 
   useEffect(() => {
+    const section = sectionRef.current;
     const stage = stageRef.current;
-    if (!stage) return;
+    if (!section || !stage) return;
 
     if (reducedMotion()) {
       stage.querySelectorAll<HTMLElement>("[data-bill]").forEach((b) => {
@@ -34,7 +35,6 @@ export default function BillsStress() {
       });
       const card = stage.querySelector<HTMLElement>("[data-consol]");
       if (card) gsap.set(card, { autoAlpha: 1, scale: 1, xPercent: -50, yPercent: -50 });
-      setConsolidated(true);
       return;
     }
 
@@ -53,20 +53,48 @@ export default function BillsStress() {
       });
       gsap.set(card, { autoAlpha: 0, scale: 0.75, xPercent: -50, yPercent: -50 });
 
-      /* ---- pinned scrubbed timeline — all viewports ---- */
+      /* ---- mouse depth: each bill drifts with the cursor at its own depth ---- */
+      const setters = bills.map((b, i) => ({
+        x: gsap.quickTo(b, "x", { duration: 0.75, ease: "power3" }),
+        y: gsap.quickTo(b, "y", { duration: 0.75, ease: "power3" }),
+        d: 7 + ((i * 37) % 12), // 7–18px pseudo-depth, stable per bill
+      }));
+
+      const onMove = (e: MouseEvent) => {
+        if (!mouseLiveRef.current) return;
+        const r = stage.getBoundingClientRect();
+        const nx = (e.clientX - r.left) / r.width - 0.5;
+        const ny = (e.clientY - r.top) / r.height - 0.5;
+        setters.forEach((s) => {
+          s.x(nx * s.d);
+          s.y(ny * s.d);
+        });
+      };
+      window.addEventListener("mousemove", onMove, { passive: true });
+
+      /* ---- single scrubbed timeline: entrance → hold → consolidate ---- */
       const tl = gsap.timeline({
         scrollTrigger: {
-          trigger: sectionRef.current,
+          trigger: section,
           start: "top top",
-          end: () => `+=${window.innerHeight * 1.5}`,
-          scrub: 1,
-          pin: sectionRef.current,
+          end: "+=150%",
+          scrub: 1.5,
+          pin: section,
           anticipatePin: 1,
           invalidateOnRefresh: true,
           onUpdate: (self) => {
             const pastHalf = self.progress > 0.5;
             mouseLiveRef.current = !pastHalf;
-            if (pastHalf && !consolidated) setConsolidated(true);
+            if (pastHalf && !consolidatedRef.current) {
+              consolidatedRef.current = true;
+              stage.classList.add("is-consolidated");
+              stage.querySelectorAll<HTMLElement>("[data-bill]").forEach((b) => {
+                b.setAttribute("aria-hidden", "true");
+              });
+              stage.querySelector("[data-consol]")?.removeAttribute("aria-hidden");
+              const wm = stage.querySelector<HTMLElement>("[data-watermark]");
+              if (wm) wm.style.opacity = "0.05";
+            }
           },
         },
       });
@@ -104,40 +132,21 @@ export default function BillsStress() {
       tl.to(card, { scale: 1.015, duration: 0.08, ease: "power2.out" });
       tl.to(card, { scale: 1, duration: 0.12, ease: "power2.out" });
 
-      /* ---- mouse depth: desktop/tablet only ---- */
-      const mm = gsap.matchMedia();
-      mm.add("(min-width: 640px)", () => {
-        const setters = bills.map((b, i) => ({
-          x: gsap.quickTo(b, "x", { duration: 0.75, ease: "power3" }),
-          y: gsap.quickTo(b, "y", { duration: 0.75, ease: "power3" }),
-          d: 7 + ((i * 37) % 12),
-        }));
-
-        const onMove = (e: MouseEvent) => {
-          if (!mouseLiveRef.current) return;
-          const r = stage.getBoundingClientRect();
-          const nx = (e.clientX - r.left) / r.width - 0.5;
-          const ny = (e.clientY - r.top) / r.height - 0.5;
-          setters.forEach((s) => {
-            s.x(nx * s.d);
-            s.y(ny * s.d);
-          });
-        };
-        window.addEventListener("mousemove", onMove, { passive: true });
-        return () => window.removeEventListener("mousemove", onMove);
-      });
-    }, stage);
+      return () => {
+        window.removeEventListener("mousemove", onMove);
+      };
+    }, section);
 
     return () => ctx.revert();
   }, []);
 
   return (
-    <section id="about" ref={sectionRef} className="overflow-hidden bg-white pt-[58px] pb-16 lg:pt-[90px] lg:pb-20">
+    <section id="about" ref={sectionRef} className="bg-white pt-[58px] pb-16 lg:pt-[90px] lg:pb-20">
       <div className="shell">
         <SectionHeading lead="More bills." accent="More stress." />
 
         {/* stage */}
-        <div ref={stageRef} className="relative mx-auto mt-8 h-[420px] max-w-[1100px] max-[519px]:h-[340px] overflow-hidden lg:mt-12 lg:h-[470px]">
+        <div ref={stageRef} className="relative mx-auto mt-8 h-[420px] max-w-[1100px] max-[519px]:h-[340px] lg:mt-12 lg:h-[470px]">
           {/* watermark */}
           <div
             aria-hidden
@@ -145,10 +154,8 @@ export default function BillsStress() {
           >
             <div data-wm className="will-change-transform">
               <div
-                className={cn(
-                  "opacity-[0.09] transition-opacity duration-700",
-                  consolidated && "opacity-[0.05]",
-                )}
+                className="opacity-[0.09] transition-opacity duration-700"
+                data-watermark
               >
                 <LogoMark className="h-[53px] w-[163px]" />
               </div>
@@ -161,7 +168,7 @@ export default function BillsStress() {
               key={bill.id}
               data-bill
               data-rotate={bill.rotate}
-              aria-hidden={consolidated}
+              aria-hidden
               className="absolute w-[175px] will-change-transform max-[519px]:w-[clamp(108px,32vw,130px)] sm:w-[190px]"
               style={{
                 left: `${compact ? bill.m.x : bill.x}%`,
@@ -171,7 +178,7 @@ export default function BillsStress() {
               <div
                 className={cn(
                   "rounded-xl border border-slate-200/80 bg-white px-6 py-5 shadow-tilt max-[519px]:px-4 max-[519px]:py-3.5",
-                  !consolidated && "animate-floatY",
+                  "animate-floatY",
                 )}
                 style={{ animationDelay: `${bill.delay}s` }}
               >
@@ -195,7 +202,7 @@ export default function BillsStress() {
           {/* consolidated payment card */}
           <div
             data-consol
-            aria-hidden={!consolidated}
+            aria-hidden
             className="absolute left-1/2 top-1/2 w-[min(300px,calc(100%-20px))] will-change-transform"
           >
             <div className="bg-panel-navy no-grid rounded-2xl px-7 py-8 text-center shadow-panel">

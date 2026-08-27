@@ -10,7 +10,6 @@
   html {
     scrollbar-width: none;
     -ms-overflow-style: none;
-    scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
@@ -236,7 +235,17 @@
 
   .tl-dot.is-active {
     transform: scale(1.45);
-    box-shadow: 0 0 0 6px rgba(36, 98, 232, 0.16);
+    box-shadow: 0 0 0 6px rgba(36, 98, 232, 0.16), 0 0 12px 2px rgba(36, 98, 232, 0.3);
+  }
+
+  /* Mobile glowing progress line pulse */
+  @keyframes line-pulse {
+    0%, 100% { opacity: 0.6; transform: translateY(0); }
+    50% { opacity: 1; transform: translateY(2px); }
+  }
+
+  .animate-line-pulse {
+    animation: line-pulse 2s ease-in-out infinite;
   }
 
   /* Hero wash: pale sky blue top-left → white centre → pale blue right */

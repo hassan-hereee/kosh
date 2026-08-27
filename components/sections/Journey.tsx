@@ -23,7 +23,7 @@ export default function Journey() {
     const ctx = gsap.context(() => {
       const mm = gsap.matchMedia();
 
-      /* Desktop: pin the section and scroll the track sideways. */
+      /* Desktop: pin the section and scroll the track sideways as you scroll. */
       mm.add("(min-width: 1024px)", () => {
         const distance = () =>
           Math.max(track.scrollWidth - section.offsetWidth, 0);
@@ -32,8 +32,8 @@ export default function Journey() {
           scrollTrigger: {
             trigger: section,
             start: "top top",
-            end: () => `+=${distance()}`,
-            scrub: 1,
+            end: () => `+=${distance() * 2}`,
+            scrub: 1.5,
             pin: section,
             anticipatePin: 1,
             invalidateOnRefresh: true,
@@ -52,7 +52,7 @@ export default function Journey() {
         }
       });
 
-      /* Mobile: pin the section and scroll the track vertically. */
+      /* Mobile: pin the section and scroll the track vertically as you scroll. */
       mm.add("(max-width: 1023px)", () => {
         const distance = () => Math.max(track.scrollHeight - viewport.offsetHeight, 0);
 
@@ -60,8 +60,8 @@ export default function Journey() {
           scrollTrigger: {
             trigger: section,
             start: "top top",
-            end: () => `+=${distance()}`,
-            scrub: 1,
+            end: () => `+=${distance() * 2.5}`,
+            scrub: 1.5,
             pin: section,
             anticipatePin: 1,
             invalidateOnRefresh: true,
@@ -84,66 +84,83 @@ export default function Journey() {
   return (
     <section
       ref={sectionRef}
-      className="bg-white relative"
+      className="bg-white relative max-[519px]:pt-[40px]"
     >
-      <div className="shell relative z-10 pt-10 pb-4 lg:pt-0 lg:pb-0">
-        <SectionHeading lead="From Your First Call to" accent="Financial Freedom" breakAfterLead />
-      </div>
+      <div className="flex min-h-[560px] flex-col justify-center py-0 lg:h-screen lg:min-h-0 lg:py-0">
+        <div className="shell relative z-10">
+          <SectionHeading lead="From Your First Call to" accent="Financial Freedom" breakAfterLead />
+        </div>
 
-      {/* Track viewport — clips on mobile, unconstrained on desktop */}
-      <div
-        ref={viewportRef}
-        className="relative mx-auto mt-4 h-[55dvh] min-h-[280px] max-w-[1100px] overflow-hidden px-6 lg:mx-0 lg:mt-12 lg:h-auto lg:min-h-0 lg:max-w-none lg:overflow-visible lg:px-0"
-      >
-        <Stagger step={130}>
-          <div
-            ref={trackRef}
-            className="relative grid w-full gap-7 px-6 sm:grid-cols-2 sm:gap-10 lg:flex lg:w-max lg:gap-[72px] lg:pl-[max(24px,calc((100vw-1200px)/2))] lg:pr-[max(48px,calc((100vw-1200px)/2))]"
-          >
-            {/* progress rail — desktop only */}
-            <div
-              aria-hidden
-              className="absolute left-0 top-[17px] hidden h-[2px] w-full bg-brand-100 lg:block"
-            >
-              <div
-                ref={lineRef}
-                className="h-full w-full origin-left bg-gradient-to-r from-brand-500 to-brand-700"
-                style={{ transform: "scaleX(0)" }}
-              />
-            </div>
-
-            {JOURNEY_STEPS.map((step, i) => (
-              <article
-                key={step.title}
-                data-stagger
-                className="relative w-full shrink-0 snap-start lg:w-[360px]"
-              >
-                <span className="tl-dot relative z-10 grid h-9 w-9 place-items-center rounded-full bg-gradient-to-b from-brand-500 to-brand-700 text-[13px] font-bold text-white shadow-pill">
-                  {i + 1}
-                </span>
-                <h3 className="mt-5 text-[14px] font-bold tracking-[-0.01em] text-ink">
-                  {step.title}
-                </h3>
-                <p className="mt-[9px] max-w-[300px] text-[13px] leading-[1.7] text-ink-500 lg:text-[14px]">
-                  {step.body}
-                </p>
-              </article>
-            ))}
-          </div>
-        </Stagger>
-      </div>
-
-      <div className="shell mt-8 sm:mt-14">
-        <SlideIn
-          direction="up"
-          delay={150}
-          className="mx-auto max-w-[1080px] rounded-xl border border-red-100 bg-[#FEF4F2] px-7 py-5"
+        {/* Track viewport — clips on mobile, unconstrained on desktop */}
+        <div
+          ref={viewportRef}
+          className="relative mx-auto mt-12 h-[55dvh] min-h-[280px] max-w-[1100px] overflow-hidden px-6 lg:mx-0 lg:mt-12 lg:h-auto lg:min-h-0 lg:max-w-none lg:overflow-visible lg:px-0"
         >
-          <p className="text-[12.5px] font-bold text-[#B42318]">{JOURNEY_NOTE.title}</p>
-          <p className="mt-[6px] text-[13px] leading-[1.65] text-ink-500">
-            {JOURNEY_NOTE.body}
-          </p>
-        </SlideIn>
+
+          <Stagger step={130}>
+            <div
+              ref={trackRef}
+              className="relative grid w-full gap-8 sm:grid-cols-2 sm:gap-10 lg:flex lg:w-max lg:gap-[72px] lg:pl-[max(24px,calc((100vw-1200px)/2))] lg:pr-[max(48px,calc((100vw-1200px)/2))]"
+            >
+              {/* progress rail — draws across the whole scroll range (desktop) */}
+              <div
+                aria-hidden
+                className="absolute left-0 top-[17px] hidden h-[2px] w-full bg-brand-100/50 lg:block"
+              >
+                {/* Glow base */}
+                <div className="absolute inset-0 bg-gradient-to-r from-brand-400/30 via-brand-500/30 to-brand-600/30 blur-[3px]" />
+                {/* Animated fill */}
+                <div
+                  ref={lineRef}
+                  className="h-full w-full origin-left"
+                  style={{ transform: "scaleX(0)" }}
+                >
+                  {/* Main line */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-brand-400 via-brand-500 to-brand-600" />
+                  {/* Glow effect */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-brand-400 via-brand-500 to-brand-600 blur-[4px] opacity-70" />
+                  {/* Bright core */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-brand-300 via-brand-400 to-brand-500 blur-[1px] opacity-90" />
+                  {/* Traveling pulse at the end */}
+                  <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-[8px] h-[8px] bg-brand-300 rounded-full blur-[2px] opacity-90" />
+                  <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-[4px] h-[4px] bg-white rounded-full" />
+                </div>
+              </div>
+
+              {JOURNEY_STEPS.map((step, i) => (
+                <article
+                  key={step.title}
+                  data-stagger
+                  className="relative w-full shrink-0 snap-start lg:w-[360px]"
+                >
+                  <span className="tl-dot relative z-10 grid h-9 w-9 place-items-center rounded-full bg-gradient-to-b from-brand-500 to-brand-700 text-[13px] font-bold text-white shadow-pill">
+                    {i + 1}
+                  </span>
+                  <h3 className="mt-5 text-[14px] font-bold tracking-[-0.01em] text-ink">
+                    {step.title}
+                  </h3>
+                  <p className="mt-[9px] max-w-[300px] text-[13px] leading-[1.7] text-ink-500 lg:text-[14px]">
+                    {step.body}
+                  </p>
+                </article>
+              ))}
+            </div>
+          </Stagger>
+        </div>
+
+        {/* warning note — stays inside the pinned viewport */}
+        <div className="shell mt-14">
+          <SlideIn
+            direction="up"
+            delay={150}
+            className="mx-auto max-w-[1080px] rounded-xl border border-red-100 bg-[#FEF4F2] px-7 py-5"
+          >
+            <p className="text-[12.5px] font-bold text-[#B42318]">{JOURNEY_NOTE.title}</p>
+            <p className="mt-[6px] text-[13px] leading-[1.65] text-ink-500">
+              {JOURNEY_NOTE.body}
+            </p>
+          </SlideIn>
+        </div>
       </div>
     </section>
   );

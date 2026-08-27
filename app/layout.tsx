@@ -3,6 +3,7 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageIntro from "@/components/ui/PageIntro";
+import SmoothScroll from "@/components/ui/SmoothScroll";
 import "./globals.css";
 
 const jakarta = Plus_Jakarta_Sans({
@@ -30,10 +31,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={jakarta.variable}>
       <body>
-        <PageIntro />
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <SmoothScroll>
+          <PageIntro />
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </SmoothScroll>
       </body>
     </html>
   );
